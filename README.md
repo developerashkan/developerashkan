@@ -55,8 +55,8 @@ I create **Autonomous AI Agents** with **Python**
       <sub><b>Firebase</b></sub>
     </td>
     <td align="center" width="110">
-      <img src="https://skillicons.dev/icons?i=huggingface" width="50" height="50" alt="HuggingFace"/><br>
-      <sub><b>HuggingFace</b></sub>
+      <img src="https://skillicons.dev/icons?i=azure" width="50" height="50" alt="Azure"/><br>
+      <sub><b>Azure</b></sub>
     </td>
   </tr>
   <tr>
@@ -73,8 +73,8 @@ I create **Autonomous AI Agents** with **Python**
       <sub><b>GitHub</b></sub>
     </td>
     <td align="center" width="110">
-      <img src="https://skillicons.dev/icons?i=androidstudio" width="50" height="50" alt="Android"/><br>
-      <sub><b>Android</b></sub>
+      <img src="https://skillicons.dev/icons?i=gitlab" width="50" height="50" alt="GitLab"/><br>
+      <sub><b>GitLab</b></sub>
     </td>
   </tr>
 </table>
