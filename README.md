@@ -22,26 +22,64 @@ I create **Autonomous AI Agents** with **Python**
 
 ---
 
-### 🛠️ Tech Stack & Tools
+<table align="center">
+  <tr>
+    <td align="center" width="110">
+      <img src="https://skillicons.dev/icons?i=flutter" width="50" height="50" alt="Flutter"/><br>
+      <sub><b>Flutter</b></sub>
+    </td>
+    <td align="center" width="110">
+      <img src="https://skillicons.dev/icons?i=dart" width="50" height="50" alt="Dart"/><br>
+      <sub><b>Dart</b></sub>
+    </td>
+    <td align="center" width="110">
+      <img src="https://skillicons.dev/icons?i=kotlin" width="50" height="50" alt="Kotlin"/><br>
+      <sub><b>Kotlin</b></sub>
+    </td>
+    <td align="center" width="110">
+      <img src="https://skillicons.dev/icons?i=swift" width="50" height="50" alt="Swift"/><br>
+      <sub><b>Swift</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="110">
+      <img src="https://skillicons.dev/icons?i=python" width="50" height="50" alt="Python"/><br>
+      <sub><b>Python</b></sub>
+    </td>
+    <td align="center" width="110">
+      <img src="https://skillicons.dev/icons?i=fastapi" width="50" height="50" alt="FastAPI"/><br>
+      <sub><b>FastAPI</b></sub>
+    </td>
+    <td align="center" width="110">
+      <img src="https://skillicons.dev/icons?i=firebase" width="50" height="50" alt="Firebase"/><br>
+      <sub><b>Firebase</b></sub>
+    </td>
+    <td align="center" width="110">
+      <img src="https://skillicons.dev/icons?i=huggingface" width="50" height="50" alt="HuggingFace"/><br>
+      <sub><b>HuggingFace</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="110">
+      <img src="https://skillicons.dev/icons?i=docker" width="50" height="50" alt="Docker"/><br>
+      <sub><b>Docker</b></sub>
+    </td>
+    <td align="center" width="110">
+      <img src="https://skillicons.dev/icons?i=git" width="50" height="50" alt="Git"/><br>
+      <sub><b>Git</b></sub>
+    </td>
+    <td align="center" width="110">
+      <img src="https://skillicons.dev/icons?i=github" width="50" height="50" alt="GitHub"/><br>
+      <sub><b>GitHub</b></sub>
+    </td>
+    <td align="center" width="110">
+      <img src="https://skillicons.dev/icons?i=androidstudio" width="50" height="50" alt="Android"/><br>
+      <sub><b>Android</b></sub>
+    </td>
+  </tr>
+</table>
 
-**Mobile & Frontend** ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white)
-![Swift](https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white)
-
-**Backend & AI** ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![AI/ML](https://img.shields.io/badge/AI%2FML-FF6F61?style=for-the-badge&logo=openai&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![HuggingFace](https://img.shields.io/badge/Hugging%20Face-FF6C37?style=for-the-badge&logo=huggingface&logoColor=white)
-
-**DevOps & Tools** ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-
-
----
+<br>
 
 ### 📫 Connect with Me
 
