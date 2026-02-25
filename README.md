@@ -10,10 +10,10 @@ Intelligent Mobile Apps & Autonomous AI Systems
 
 ### 🚀 About Me
 
-I build **fast, high-performance mobile apps** with  
-*Flutter · Java · Kotlin · Swift*
+I build **fast, high-performance** ***mobile apps*** with  
+***Flutter · Java · Kotlin · Swift***
 
-I create **Autonomous AI Agents** with **Python**  
+I create **Autonomous AI Agents** with ***Python***  
 
 [Secondary GitHub Account](https://github.com/ashkanvit)
 
