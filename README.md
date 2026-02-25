@@ -10,7 +10,7 @@ Intelligent Mobile Apps & Autonomous AI Systems
 
 ### 🚀 About Me
 
-I build **fast, high-performance** ***mobile apps*** with  
+I build fast, high-performance ***mobile apps*** with  
 ***Flutter · Java · Kotlin · Swift***
 
 I create **Autonomous AI Agents** with ***Python***  
