@@ -4,7 +4,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=34&pause=1200&color=00F0FF&center=true&vCenter=true&width=750&height=80&lines=Hey+%F0%9F%91%8B+I'm+Ashkan;Full-Stack+Mobile+Developer+%F0%9F%93%B1;AI+%26+Robotics+Engineer+%F0%9F%A4%96" alt="Hi there" />
 
-Intelligent Mobile Apps & Autonomous AI Systems
+AI-Powered Mobile Apps & Autonomous Systems
 
 ---
 
