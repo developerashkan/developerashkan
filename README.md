@@ -181,7 +181,7 @@ I create **Autonomous AI Agents** with ***Python***
     <tr>
       <td colspan="2" align="center" valign="top">
         <a href="https://pub.dev/packages/car_license_plate">
-          <img src="https://img.shields.io/badge/car__license__plate-Iranian%20Plate%20System-00F2FE?style=for-the-badge&logo=flutter&logoColor=000&label=WIDGET&labelColor=0D1117" alt="car_license_plate"/>
+          <img src="https://img.shields.io/badge/car__license__plate-%20Plate%20System-00F2FE?style=for-the-badge&logo=flutter&logoColor=000&label=WIDGET&labelColor=0D1117" alt="car_license_plate"/>
         </a>
         <br />
         <code><b>⚡ Region-Specific Dynamic License Plate Rendering Engine ⚡</b></code>
