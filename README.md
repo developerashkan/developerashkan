@@ -90,8 +90,16 @@ I create **Autonomous AI Agents** with ***Python***
 | **[performance_list_view](https://pub.dev/packages/performance_list_view)** | Production-ready ListView with pagination, refresh & caching |
 | **[smart_progress_circle](https://pub.dev/packages/smart_progress_circle)** | Customizable circular progress indicator with interactive features |
 
+### 🚀 Selected Projects
+
+| Project | Description |
+|---------|-------------|
+| **[World Lens](https://github.com/developerashkan/world_lens)** | High-performance Flutter app for real-time global intelligence monitoring with 3D globe, market data & voice control |
+| **[ollama_easy](https://github.com/developerashkan/ollama_easy)** | Lightweight & easy-to-use Ollama client for Flutter with streaming, chat & JSON support |
+
 ### 📫 Connect with Me
 
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ashkanbhmn@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ashkan-bahmani-1ab5b1205/)
 
 </div>
