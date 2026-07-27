@@ -80,15 +80,6 @@ I create **Autonomous AI Agents** with ***Python***
 
 <div align="center">
 
-  <!-- TOP TELEMETRY / STATUS BAR -->
-  <p align="center">
-    <code><b>[ SYSTEM: ACTIVE ]</b></code> &nbsp;•&nbsp;
-    <code><b>[ ENGINE: FLUTTER / DART ]</b></code> &nbsp;•&nbsp;
-    <code><b>[ ARCHITECTURE: HIGH-PERF ]</b></code>
-  </p>
-
-  <br />
-
   <!-- SECTION 1: FEATURED PACKAGES -->
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:161B22,100:0D1117&height=80&section=header&text=%E2%97%88%20F%20E%20A%20T%20U%20R%20E%20D%20%20P%20A%20C%20K%20A%20G%20E%20S%20%E2%97%88&fontSize=20&fontColor=00F2FE&fontAlignY=50" width="100%" alt="Featured Packages Header"/>
 
