@@ -78,26 +78,98 @@ I create **Autonomous AI Agents** with ***Python***
 
 <br>
 
-### 🔥 Featured Packages
+<br>
+<div align="center">
 
-| Package | Description |
-|---------|-------------|
-| **[app_bar_search](https://pub.dev/packages/app_bar_search)** | Beautiful searchable AppBar with 10 animation styles |
-| **[car_license_plate](https://pub.dev/packages/car_license_plate)** | Iranian vehicle license plate widget for Flutter |
-| **[azure_speech_recognition_services](https://pub.dev/packages/azure_speech_recognition_services)** | Flutter integration for Microsoft Azure Speech-to-Text |
-| **[ollama_easy](https://pub.dev/packages/ollama_easy)** | Super simple Ollama client for Flutter (streaming + JSON) |
-| **[smart_refresh_token](https://pub.dev/packages/smart_refresh_token)** | Automatic Dio token refresh with retry & concurrency handling |
-| **[performance_list_view](https://pub.dev/packages/performance_list_view)** | Production-ready ListView with pagination, refresh & caching |
-| **[smart_progress_circle](https://pub.dev/packages/smart_progress_circle)** | Customizable circular progress indicator with interactive features |
+  <!-- FEATURED PACKAGES SECTION -->
+  <h2 align="center">✦ 𝐅 𝐄 𝐀 𝐓 𝐔 𝐑 𝐄 𝐃 &nbsp; 𝐏 𝐀 𝐂 𝐊 𝐀 𝐆 𝐄 𝐒 ✦</h2>
+  <p align="center">
+    <i>High-performance components & structural logic</i>
+  </p>
+  <br>
 
-### 🚀 Selected Projects
+  <table align="center">
+    <tr>
+      <td align="center" width="50%">
+        <a href="https://pub.dev/packages/app_bar_search">
+          <img src="https://img.shields.io/badge/app__bar__search-Searchable%20AppBar%20with%2010%20Animations-00D4FF?style=for-the-badge&logo=flutter&logoColor=white&labelColor=111827" alt="app_bar_search"/>
+        </a>
+      </td>
+      <td align="center" width="50%">
+        <a href="https://pub.dev/packages/smart_refresh_token">
+          <img src="https://img.shields.io/badge/smart__refresh__token-Auto%20Dio%20Token%20Refresh-00D4FF?style=for-the-badge&logo=flutter&logoColor=white&labelColor=111827" alt="smart_refresh_token"/>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="50%">
+        <a href="https://pub.dev/packages/ollama_easy">
+          <img src="https://img.shields.io/badge/ollama__easy-Simple%20Ollama%20Client%20(Streaming%20%2B%20JSON)-00D4FF?style=for-the-badge&logo=flutter&logoColor=white&labelColor=111827" alt="ollama_easy"/>
+        </a>
+      </td>
+      <td align="center" width="50%">
+        <a href="https://pub.dev/packages/performance_list_view">
+          <img src="https://img.shields.io/badge/performance__list__view-Pagination%20%2B%20Refresh%20%2B%20Cache-00D4FF?style=for-the-badge&logo=flutter&logoColor=white&labelColor=111827" alt="performance_list_view"/>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="50%">
+        <a href="https://pub.dev/packages/smart_progress_circle">
+          <img src="https://img.shields.io/badge/smart__progress__circle-Interactive%20Circular%20Progress-00D4FF?style=for-the-badge&logo=flutter&logoColor=white&labelColor=111827" alt="smart_progress_circle"/>
+        </a>
+      </td>
+      <td align="center" width="50%">
+        <a href="https://pub.dev/packages/azure_speech_recognition_services">
+          <img src="https://img.shields.io/badge/azure__speech-Azure%20Speech%20to%20Text-00D4FF?style=for-the-badge&logo=microsoftazure&logoColor=white&labelColor=111827" alt="azure_speech"/>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <a href="https://pub.dev/packages/car_license_plate">
+          <img src="https://img.shields.io/badge/car__license__plate-Iranian%20License%20Plate%20Widget-00D4FF?style=for-the-badge&logo=flutter&logoColor=white&labelColor=111827" alt="car_license_plate"/>
+        </a>
+      </td>
+    </tr>
+  </table>
 
-| Project | Description |
-|---------|-------------|
-| **[World Lens](https://github.com/developerashkan/world_lens)** | High-performance Flutter app for real-time global intelligence monitoring with 3D globe, market data & voice control |
-| **[ollama_easy](https://github.com/developerashkan/ollama_easy)** | Lightweight & easy-to-use Ollama client for Flutter with streaming, chat & JSON support |
+  <br><br><br>
 
-### 📫 Connect with Me
+  <!-- SELECTED PROJECTS SECTION -->
+  <h2 align="center">✦ 𝐒 𝐄 𝐋 𝐄 𝐂 𝐓 𝐄 𝐃 &nbsp; 𝐏 𝐑 𝐎 𝐉 𝐄 𝐂 𝐓 𝐒 ✦</h2>
+  <p align="center">
+    <i>Advanced AI integration & global architectures</i>
+  </p>
+  <br>
+
+  <table align="center">
+    <tr>
+      <td align="center" width="50%">
+        <a href="https://github.com/developerashkan/world_lens">
+          <img src="https://img.shields.io/badge/World%20Lens-Real--time%20Global%20Intelligence%20App-A855F7?style=for-the-badge&logo=flutter&logoColor=white&labelColor=111827" alt="World Lens"/>
+        </a>
+        <br><br>
+        <sup><b>◖ 3D Globe · Market Data · Voice Control ◗</b></sup>
+      </td>
+      <td align="center" width="50%">
+        <a href="https://github.com/developerashkan/ollama_easy">
+          <img src="https://img.shields.io/badge/ollama__easy-Lightweight%20Ollama%20Client-A855F7?style=for-the-badge&logo=flutter&logoColor=white&labelColor=111827" alt="ollama_easy"/>
+        </a>
+        <br><br>
+        <sup><b>◖ Streaming · Chat · JSON Support ◗</b></sup>
+      </td>
+    </tr>
+  </table>
+
+  <br><br><br>
+
+  <!-- CONNECT SECTION -->
+  <h2 align="center">✦ 𝐂 𝐎 𝐍 𝐍 𝐄 𝐂 𝐓 ✦</h2>
+  <br>
+
+</div>
+<br>
 
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ashkanbhmn@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ashkan-bahmani-1ab5b1205/)
