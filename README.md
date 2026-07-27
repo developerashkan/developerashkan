@@ -1,8 +1,8 @@
 <div align="center">
   
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Ashkan&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=%2B8%20Years%20Mobile%20Dev%20%28Flutter%2C%20iOS%2C%20Android%29&descAlignY=51&descAlign=50"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Ashkan&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=%2B8%20Years%20Mobile%20Engineer%20%28Flutter%2C%20iOS%2C%20Android%29&descAlignY=51&descAlign=50"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=34&pause=1200&color=00F0FF&center=true&vCenter=true&width=750&height=80&lines=Hey+%F0%9F%91%8B+I'm+Ashkan;Full-Stack+Mobile+Developer+%F0%9F%93%B1;AI+%26+Robotics+Engineer+%F0%9F%A4%96" alt="Hi there" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=34&pause=1200&color=00F0FF&center=true&vCenter=true&width=750&height=80&lines=Hey+%F0%9F%91%8B+I'm+Ashkan;Full-Stack+Mobile+Engineer+%F0%9F%93%B1;AI+%26+Robotics+Engineer+%F0%9F%A4%96" alt="Hi there" />
 
 AI-Powered Mobile Apps & Autonomous Systems
 
@@ -77,6 +77,18 @@ I create **Autonomous AI Agents** with ***Python***
 </table>
 
 <br>
+
+### 🔥 Featured Packages
+
+| Package | Description |
+|---------|-------------|
+| **[app_bar_search](https://pub.dev/packages/app_bar_search)** | Beautiful searchable AppBar with 10 animation styles |
+| **[car_license_plate](https://pub.dev/packages/car_license_plate)** | Iranian vehicle license plate widget for Flutter |
+| **[azure_speech_recognition_services](https://pub.dev/packages/azure_speech_recognition_services)** | Flutter integration for Microsoft Azure Speech-to-Text |
+| **[ollama_easy](https://pub.dev/packages/ollama_easy)** | Super simple Ollama client for Flutter (streaming + JSON) |
+| **[smart_refresh_token](https://pub.dev/packages/smart_refresh_token)** | Automatic Dio token refresh with retry & concurrency handling |
+| **[performance_list_view](https://pub.dev/packages/performance_list_view)** | Production-ready ListView with pagination, refresh & caching |
+| **[smart_progress_circle](https://pub.dev/packages/smart_progress_circle)** | Customizable circular progress indicator with interactive features |
 
 ### 📫 Connect with Me
 
