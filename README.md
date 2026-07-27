@@ -81,7 +81,8 @@ I create **Autonomous AI Agents** with ***Python***
 <div align="center">
 
   <!-- SECTION 1: FEATURED PACKAGES -->
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:0D1117,50:161B22,100:0D1117&height=80&section=header&text=%E2%97%88%20%20F%20E%20A%20T%20U%20R%20E%20D%20%20%20P%20A%20C%20K%20A%20G%20E%20S%20%20%E2%97%88&fontSize=18&fontColor=0078D4&fontAlignY=50" width="100%" alt="Featured Packages Header"/>
+<!-- SECTION 1: FEATURED PACKAGES -->
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:0D1117,50:161B22,100:0D1117&height=80&section=header&text=%E2%97%88%C2%A0FEATURED%C2%A0PACKAGES%C2%A0%E2%97%88&fontSize=18&fontColor=0078D4&fontAlignY=50" width="100%" alt="Featured Packages Header"/>
 
   <p align="center">
     <i><code>High-performance Flutter components, streaming protocols & logic engines</code></i>
@@ -188,8 +189,8 @@ I create **Autonomous AI Agents** with ***Python***
 
 <br /><br />
 
-  <!-- SECTION 2: SELECTED PROJECTS -->
-  <img src="https://capsule-render.vercel.app/api?type=slice&color=0:0D1117,50:161B22,100:0D1117&height=80&section=header&text=%E2%97%88%20%20S%20E%20L%20E%20C%20T%20E%20D%20%20%20P%20R%20O%20J%20E%20C%20T%20S%20%20%E2%97%88&fontSize=18&fontColor=D90429&fontAlignY=50" width="100%" alt="Selected Projects Header"/>
+ <!-- SECTION 2: SELECTED PROJECTS -->
+<img src="https://capsule-render.vercel.app/api?type=slice&color=0:0D1117,50:161B22,100:0D1117&height=80&section=header&text=%E2%97%88%C2%A0SELECTED%C2%A0PROJECTS%C2%A0%E2%97%88&fontSize=18&fontColor=D90429&fontAlignY=50" width="100%" alt="Selected Projects Header"/>
 
   <p align="center">
     <i><code>AI-Native Platforms & Spatial Architectures</code></i>
@@ -226,8 +227,8 @@ I create **Autonomous AI Agents** with ***Python***
 
 <br /><br />
 
- <!-- SECTION 3: INITIAL LINKS -->
-  <img src="https://capsule-render.vercel.app/api?type=rounded&color=0:0D1117,50:161B22,100:0D1117&height=80&section=header&text=%E2%97%88%20%20I%20N%20I%20T%20I%20A%20L%20%20%20L%20I%20N%20K%20S%20%20%E2%97%88&fontSize=18&fontColor=00FF87&fontAlignY=50" width="100%" alt="Initial Links Header"/>
+<!-- SECTION 3: INITIAL LINKS -->
+<img src="https://capsule-render.vercel.app/api?type=rounded&color=0:0D1117,50:161B22,100:0D1117&height=80&section=header&text=%E2%97%88%C2%A0INITIAL%C2%A0LINKS%C2%A0%E2%97%88&fontSize=18&fontColor=00FF87&fontAlignY=50" width="100%" alt="Initial Links Header"/>
 
 <br /><br />
 
