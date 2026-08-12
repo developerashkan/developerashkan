@@ -2,7 +2,7 @@
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Ashkan&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=%2B8%20Years%20Mobile%20Engineer%20%28Flutter%2C%20iOS%2C%20Android%29&descAlignY=51&descAlign=50"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=34&pause=1200&color=00F0FF&center=true&vCenter=true&width=750&height=80&lines=Hey+%F0%9F%91%8B+I'm+Ashkan;Full-Stack+Mobile+Engineer+%F0%9F%93%B1;AI+%26+Robotics+Engineer+%F0%9F%A4%96" alt="Hi there" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=34&pause=1200&color=00F0FF&center=true&vCenter=true&width=750&height=80&lines=Hey+%F0%9F%91%8B+I'm+Ashkan;Full-Stack+Mobile+Engineer+%F0%9F%93%B1;AI+%26+Software+Engineer+%F0%9F%A4%96" alt="Hi there" />
 
 AI-Powered Mobile Apps & Autonomous Systems
 
