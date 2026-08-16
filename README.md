@@ -18,8 +18,8 @@ I create **Autonomous AI Agents** with ***Python***
 [Secondary GitHub Account](https://github.com/ashkanvit)
 
 ---
-### Combined Contributions
-[![Ashkan's Combined Contributions](https://github-readme-contribution-merger.vercel.app/api/vector?user=developerashkan&user=ashkanvit&theme=github_dark)](https://github.com/developerashkan)
+### Combined Stats
+[![Ashkan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=developerashkan&include_all_commits=true&theme=dark)](https://github.com/developerashkan)
 
 <table align="center">
   <tr>
