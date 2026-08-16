@@ -18,8 +18,6 @@ I create **Autonomous AI Agents** with ***Python***
 [Secondary GitHub Account](https://github.com/ashkanvit)
 
 ---
-### Combined Contributions
-![Ashkan's Combined Contributions](https://github-contribution-merger.apoorvdarshan.com/api/merge?users=developerashkan,ashkanvit&theme=github-dark)
 
 <table align="center">
   <tr>
@@ -234,7 +232,7 @@ I create **Autonomous AI Agents** with ***Python***
 
 <br /><br />
 
-  <a href="mailto:ashkanbhmn@gmail.com">
+ <a href="mailto:ashkanbhmn@gmail.com">
     <img src="https://img.shields.io/badge/DIRECT_EMAIL-ashkanbhmn%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117" alt="Gmail"/>
   </a>
   &nbsp;
@@ -249,4 +247,16 @@ I create **Autonomous AI Agents** with ***Python***
   </p>
 
 </div>
+
+<br />
+
+### Combined Contributions (developerashkan + Secondary: ashkanvit)
+
+<p align="center">
+  <img src="https://github-contribution-merger.apoorvdarshan.com/api/merge?users=developerashkan,ashkanvit&theme=github-dark" alt="Combined GitHub Contributions" />
+</p>
 </div>
+
+</div>
+
+
