@@ -21,6 +21,9 @@ I create **Autonomous AI Agents** with ***Python***
 ### Combined Stats
 [![Ashkan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=developerashkan&include_all_commits=true&theme=dark)](https://github.com/developerashkan)
 
+### Contribution Graph
+[![Ashkan's Contributions](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=developerashkan&theme=dark)](https://github.com/developerashkan)
+
 <table align="center">
   <tr>
     <td align="center" width="110">
