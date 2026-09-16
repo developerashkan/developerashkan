@@ -236,9 +236,7 @@ I create **Autonomous AI Agents** with ***Python***
     <img src="https://img.shields.io/badge/DIRECT_EMAIL-ashkanbhmn%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117" alt="Gmail"/>
   </a>
   &nbsp;
-  <a href="https://www.linkedin.com/in/ashkan-bahmani-1ab5b1205/">
-    <img src="https://img.shields.io/badge/NEURAL_NET-LinkedIn_Profile-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D1117" alt="LinkedIn"/>
-  </a>
+
 
 <br /><br />
 
