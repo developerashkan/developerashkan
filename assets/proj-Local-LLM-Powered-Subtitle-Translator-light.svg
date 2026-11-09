@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="236" viewBox="0 0 580 236" role="img" aria-label="SubLingo: Translates .srt subtitles with local LLMs via Ollama while keeping timing and formatting intact."><title>SubLingo: Translates .srt subtitles with local LLMs via Ollama while keeping timing and formatting intact.</title>
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBBF24"/><stop offset="1" stop-color="#F97316"/></linearGradient>
+<radialGradient id="glow" cx="1" cy="0" r="1"><stop offset="0" stop-color="#FBBF24" stop-opacity="0.1"/><stop offset="0.6" stop-color="#F97316" stop-opacity="0"/></radialGradient>
+<linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FBBF24" stop-opacity="0"/><stop offset="0.5" stop-color="#FBBF24" stop-opacity="0.9"/><stop offset="1" stop-color="#F97316" stop-opacity="0"/></linearGradient>
+<clipPath id="c"><rect x="1" y="1" width="578" height="234" rx="20"/></clipPath>
+</defs>
+<g clip-path="url(#c)">
+<rect width="580" height="236" fill="#FFFFFF"/>
+<rect width="580" height="236" fill="url(#glow)"/>
+<rect x="60" y="1" width="460" height="1.5" fill="url(#edge)"/>
+</g>
+<rect x="1" y="1" width="578" height="234" rx="20" fill="none" stroke="#E2E8F0"/>
+<rect x="28" y="28" width="52" height="52" rx="14" fill="url(#g)"/>
+<g transform="translate(40 40) scale(1.17)" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M6.5 15h6M14.5 15h3M6.5 11.5h3M11.5 11.5h6"/></g>
+<text x="98" y="52" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="21" font-weight="700" fill="#0F172A">SubLingo</text>
+<text x="98" y="76" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#64748B">Python  ·  github.com/developerashkan</text>
+
+<text font-family="'Inter','Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-size="17" fill="#334155"><tspan x="28" y="124">Translates .srt subtitles with local LLMs via Ollama</tspan><tspan x="28" y="150">while keeping timing and formatting intact.</tspan></text>
+<rect x="28.0" y="178.0" width="68.6" height="26" rx="13.0" fill="#FBBF24" fill-opacity="0.08" stroke="#E2E8F0"/><text x="62.3" y="195.3" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" font-weight="500" fill="#334155">Python</text><rect x="104.6" y="178.0" width="68.6" height="26" rx="13.0" fill="#FBBF24" fill-opacity="0.08" stroke="#E2E8F0"/><text x="139.0" y="195.3" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" font-weight="500" fill="#334155">Ollama</text><rect x="181.3" y="178.0" width="76.1" height="26" rx="13.0" fill="#FBBF24" fill-opacity="0.08" stroke="#E2E8F0"/><text x="219.3" y="195.3" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" font-weight="500" fill="#334155">Privacy</text>
+<text x="552" y="197" text-anchor="end" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#64748B">★ 5</text>
+</svg>

@@ -1,0 +1,98 @@
+{
+  "user": "developerashkan",
+  "secondary": "ashkanvit",
+  "name": ["Ashkan", "Bahmani"],
+  "role": "MOBILE  ×  AI ENGINEER",
+  "status": "Open to new opportunities",
+  "tagline": ["Flutter & native apps with on-device AI —", "fast, private, and built to ship."],
+  "typing": [
+    "running LLMs offline in pure Dart",
+    "tracking BLE devices with Kalman filters",
+    "painting GPU shaders in Flutter",
+    "orchestrating autonomous AI agents"
+  ],
+  "years": "8+",
+  "email": "ashkanbhmn@gmail.com",
+
+  "packages": [
+    {
+      "id": "generative_shader_ui", "icon": "sparkles", "accent": "violet", "badge": "NEW",
+      "blurb": "GPU fragment-shader widgets: liquid glass, Siri orb, particles, neon buttons and auto skeleton loaders.",
+      "tags": ["Shaders", "GPU", "Animation"]
+    },
+    {
+      "id": "device_finder", "icon": "radar", "accent": "emerald",
+      "blurb": "Fully offline Bluetooth tracking: Kalman-filtered RSSI, trilateration and a smooth radar UI.",
+      "tags": ["BLE", "Kalman", "Pure Dart"]
+    },
+    {
+      "id": "rehoboam_neural_ui", "icon": "eye", "accent": "rose",
+      "blurb": "A Rehoboam-style neural HUD with organic particle fields and a 3D Earth globe with geo mapping.",
+      "tags": ["HUD", "3D", "Particles"]
+    },
+    {
+      "id": "ollama_easy", "icon": "cpu", "accent": "cyan",
+      "blurb": "One-line ask(), streaming, typed chat, askJson() and embeddings for local Ollama models.",
+      "tags": ["LLM", "Streaming", "Local AI"]
+    },
+    {
+      "id": "app_bar_search", "icon": "search", "accent": "blue",
+      "blurb": "Drop-in AppBar with integrated search and smooth, zero-lag animations.",
+      "tags": ["Widget", "Search", "UX"]
+    },
+    {
+      "id": "car_license_plate", "icon": "plate", "accent": "amber",
+      "blurb": "Iranian vehicle license plates as precise, region-aware vector widgets.",
+      "tags": ["Widget", "Canvas", "Vector"]
+    }
+  ],
+  "more_packages": [
+    {"id": "smart_refresh_token", "blurb": "Automatic Dio token refresh with request queueing"},
+    {"id": "performance_list_view", "blurb": "Pagination, pull-to-refresh, error states, image memory optimisation"},
+    {"id": "azure_speech_recognition_services", "blurb": "Azure speech-to-text for Flutter"},
+    {"id": "smart_progress_circle", "blurb": "Customisable, gesture-driven circular progress"}
+  ],
+
+  "projects": [
+    {
+      "repo": "world_lens", "title": "World Lens", "icon": "globe", "accent": "cyan",
+      "blurb": "Real-time global intelligence monitor: live 3D Earth, market streams and a voice-driven HUD.",
+      "tags": ["Flutter", "3D", "Realtime"]
+    },
+    {
+      "repo": "offline-ai-with-smollm2", "title": "Offline AI · SmolLM2", "icon": "chat", "accent": "violet",
+      "blurb": "Chat with an LLM entirely on-device: pure-Dart SmolLM2 inference, no internet required.",
+      "tags": ["Flutter", "On-device LLM"]
+    },
+    {
+      "repo": "LocalForge", "title": "LocalForge", "icon": "terminal", "accent": "emerald",
+      "blurb": "A complete offline AI development IDE powered by local models.",
+      "tags": ["Python", "Local AI", "IDE"]
+    },
+    {
+      "repo": "Local-LLM-Powered-Subtitle-Translator", "title": "SubLingo", "icon": "film", "accent": "amber",
+      "blurb": "Translates .srt subtitles with local LLMs via Ollama while keeping timing and formatting intact.",
+      "tags": ["Python", "Ollama", "Privacy"]
+    },
+    {
+      "repo": "insight_radar", "title": "Insight Radar", "icon": "pulse", "accent": "rose",
+      "blurb": "Autonomous agent that monitors trending events, verifies live sources and scores confidence.",
+      "tags": ["TypeScript", "Agents"]
+    },
+    {
+      "repo": "agentkit", "title": "AgentKit", "icon": "bot", "accent": "blue",
+      "blurb": "Modular Python toolkit to build, test and deploy AI agents with plug-ins and skill orchestration.",
+      "tags": ["Python", "Agents", "Toolkit"]
+    }
+  ],
+  "more_projects": [
+    {"repo": "gzip_chat", "blurb": "Zero-weight “language model” that writes Shakespeare via zlib compression", "stack": "Flutter"},
+    {"repo": "genui_gemini", "blurb": "Dynamic AI-generated UI with Google Gemini", "stack": "Flutter · Gemini"},
+    {"repo": "ollama_flutter", "blurb": "Modern chat UI for local Ollama models", "stack": "Flutter · Ollama"},
+    {"repo": "smart_support_agent", "blurb": "Customer-support agent that routes requests and checks orders", "stack": "LangGraph · Gemini"},
+    {"repo": "crypto_analysis_agent", "blurb": "Autonomous crypto market analysis agent", "stack": "Python"},
+    {"repo": "LocalMind", "blurb": "Jetpack Compose notes with AI suggestions via Ollama", "stack": "Kotlin · Compose"},
+    {"repo": "JobGrabberAgent", "blurb": "Agent that finds jobs matching your request", "stack": "TypeScript"},
+    {"repo": "Gantt-Chart-Generator", "blurb": "Turns plain-text task lists into Gantt charts in the terminal", "stack": "Python"}
+  ]
+}

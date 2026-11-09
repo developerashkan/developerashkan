@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="236" viewBox="0 0 580 236" role="img" aria-label="Offline AI · SmolLM2: Chat with an LLM entirely on-device: pure-Dart SmolLM2 inference, no internet required."><title>Offline AI · SmolLM2: Chat with an LLM entirely on-device: pure-Dart SmolLM2 inference, no internet required.</title>
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A78BFA"/><stop offset="1" stop-color="#EC4899"/></linearGradient>
+<radialGradient id="glow" cx="1" cy="0" r="1"><stop offset="0" stop-color="#A78BFA" stop-opacity="0.1"/><stop offset="0.6" stop-color="#EC4899" stop-opacity="0"/></radialGradient>
+<linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A78BFA" stop-opacity="0"/><stop offset="0.5" stop-color="#A78BFA" stop-opacity="0.9"/><stop offset="1" stop-color="#EC4899" stop-opacity="0"/></linearGradient>
+<clipPath id="c"><rect x="1" y="1" width="578" height="234" rx="20"/></clipPath>
+</defs>
+<g clip-path="url(#c)">
+<rect width="580" height="236" fill="#FFFFFF"/>
+<rect width="580" height="236" fill="url(#glow)"/>
+<rect x="60" y="1" width="460" height="1.5" fill="url(#edge)"/>
+</g>
+<rect x="1" y="1" width="578" height="234" rx="20" fill="none" stroke="#E2E8F0"/>
+<rect x="28" y="28" width="52" height="52" rx="14" fill="url(#g)"/>
+<g transform="translate(40 40) scale(1.17)" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 5.5h15a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H10l-4.5 3.5v-3.5h-1a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1z"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01" stroke-width="2.6"/></g>
+<text x="98" y="52" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="21" font-weight="700" fill="#0F172A">Offline AI · SmolLM2</text>
+<text x="98" y="76" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#64748B">Dart  ·  github.com/developerashkan</text>
+
+<text font-family="'Inter','Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-size="17" fill="#334155"><tspan x="28" y="124">Chat with an LLM entirely on-device: pure-Dart SmolLM2</tspan><tspan x="28" y="150">inference, no internet required.</tspan></text>
+<rect x="28.0" y="178.0" width="76.1" height="26" rx="13.0" fill="#A78BFA" fill-opacity="0.08" stroke="#E2E8F0"/><text x="66.0" y="195.3" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" font-weight="500" fill="#334155">Flutter</text><rect x="112.1" y="178.0" width="120.7" height="26" rx="13.0" fill="#A78BFA" fill-opacity="0.08" stroke="#E2E8F0"/><text x="172.4" y="195.3" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" font-weight="500" fill="#334155">On-device LLM</text>
+<text x="552" y="197" text-anchor="end" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#64748B">★ 3</text>
+</svg>

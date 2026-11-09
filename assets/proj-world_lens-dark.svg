@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="236" viewBox="0 0 580 236" role="img" aria-label="World Lens: Real-time global intelligence monitor: live 3D Earth, market streams and a voice-driven HUD."><title>World Lens: Real-time global intelligence monitor: live 3D Earth, market streams and a voice-driven HUD.</title>
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#3B82F6"/></linearGradient>
+<radialGradient id="glow" cx="1" cy="0" r="1"><stop offset="0" stop-color="#22D3EE" stop-opacity="0.2"/><stop offset="0.6" stop-color="#3B82F6" stop-opacity="0"/></radialGradient>
+<linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22D3EE" stop-opacity="0"/><stop offset="0.5" stop-color="#22D3EE" stop-opacity="0.9"/><stop offset="1" stop-color="#3B82F6" stop-opacity="0"/></linearGradient>
+<clipPath id="c"><rect x="1" y="1" width="578" height="234" rx="20"/></clipPath>
+</defs>
+<g clip-path="url(#c)">
+<rect width="580" height="236" fill="#0D131D"/>
+<rect width="580" height="236" fill="url(#glow)"/>
+<rect x="60" y="1" width="460" height="1.5" fill="url(#edge)"/>
+</g>
+<rect x="1" y="1" width="578" height="234" rx="20" fill="none" stroke="#1E2836"/>
+<rect x="28" y="28" width="52" height="52" rx="14" fill="url(#g)"/>
+<g transform="translate(40 40) scale(1.17)" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="3.8" ry="9"/><path d="M3 12h18"/></g>
+<text x="98" y="52" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="21" font-weight="700" fill="#E6EDF3">World Lens</text>
+<text x="98" y="76" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#8B949E">Dart  ·  github.com/developerashkan</text>
+
+<text font-family="'Inter','Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-size="17" fill="#C9D1D9"><tspan x="28" y="124">Real-time global intelligence monitor: live 3D Earth,</tspan><tspan x="28" y="150">market streams and a voice-driven HUD.</tspan></text>
+<rect x="28.0" y="178.0" width="76.1" height="26" rx="13.0" fill="#22D3EE" fill-opacity="0.1" stroke="#1E2836"/><text x="66.0" y="195.3" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" font-weight="500" fill="#C9D1D9">Flutter</text><rect x="112.1" y="178.0" width="38.9" height="26" rx="13.0" fill="#22D3EE" fill-opacity="0.1" stroke="#1E2836"/><text x="131.5" y="195.3" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" font-weight="500" fill="#C9D1D9">3D</text><rect x="159.0" y="178.0" width="83.5" height="26" rx="13.0" fill="#22D3EE" fill-opacity="0.1" stroke="#1E2836"/><text x="200.7" y="195.3" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" font-weight="500" fill="#C9D1D9">Realtime</text>
+<text x="552" y="197" text-anchor="end" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#8B949E">★ 3</text>
+</svg>

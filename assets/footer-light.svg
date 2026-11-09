@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="170" viewBox="0 0 1000 170" role="img" aria-label="Let&#x27;s build something remarkable"><title>Let&#x27;s build something remarkable</title>
+<defs>
+<linearGradient id="t" gradientUnits="userSpaceOnUse" x1="250" y1="0" x2="750" y2="0" spreadMethod="reflect">
+<stop offset="0" stop-color="#0891B2"/><stop offset="0.5" stop-color="#7C3AED"/><stop offset="1" stop-color="#DB2777"/>
+<animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="1000 0" dur="10s" repeatCount="indefinite"/></linearGradient>
+<radialGradient id="h" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#7C3AED" stop-opacity="0.10"/><stop offset="1" stop-color="#7C3AED" stop-opacity="0"/></radialGradient>
+</defs>
+<ellipse cx="500" cy="80" rx="420" ry="90" fill="url(#h)"/>
+<text x="500" y="76" text-anchor="middle" font-family="'Inter','Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="800" letter-spacing="-1.2" fill="#0F172A">Let’s build something <tspan fill="url(#t)">remarkable.</tspan></text>
+<text x="500" y="114" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="15" fill="#64748B">mobile apps  ·  on-device AI  ·  autonomous agents  ·  open source</text>
+<rect x="400" y="140" width="200" height="2" rx="1" fill="url(#t)"/>
+</svg>
