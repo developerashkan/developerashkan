@@ -48,6 +48,7 @@ ACCENTS = {
     "amber": ("#FBBF24", "#F97316"),
     "rose": ("#FB7185", "#8B5CF6"),
     "blue": ("#60A5FA", "#6366F1"),
+    "lime": ("#A3E635", "#10B981"),
 }
 
 LANG_COLORS = {
@@ -67,6 +68,7 @@ ICONS = {
     "chat": '<path d="M4.5 5.5h15a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H10l-4.5 3.5v-3.5h-1a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1z"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01" stroke-width="2.6"/>',
     "terminal": '<rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="M7 9.5l3 2.5-3 2.5M12.5 15h4.5"/>',
     "film": '<rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M6.5 15h6M14.5 15h3M6.5 11.5h3M11.5 11.5h6"/>',
+    "store": '<path d="M4 9.5V19a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9.5"/><path d="M3 9.5l1.6-5h14.8l1.6 5a2.6 2.6 0 0 1-5.1.6 2.6 2.6 0 0 1-5.8 0 2.6 2.6 0 0 1-5.8 0A2.6 2.6 0 0 1 3 9.5z"/><path d="M9.5 20v-5h5v5"/>',
     "pulse": '<path d="M3 12h4l2.5-6 5 12 2.5-6h4"/>',
     "bot": '<rect x="4.5" y="8" width="15" height="11" rx="3"/><path d="M12 4.5V8"/><circle cx="12" cy="3.8" r="1.1"/><path d="M9.3 13.2h.01M14.7 13.2h.01" stroke-width="2.8"/><path d="M2.5 12.5v2.5M21.5 12.5v2.5"/>',
 }
@@ -192,20 +194,28 @@ def hero(theme: str, stats: dict) -> str:
         if i:
             stat_svg += f'<rect x="{sx - 20}" y="368" width="1" height="46" fill="{c["faint"]}"/>'
 
-    # Floating tech chips around the phone
-    chips = [("Flutter", "#54C5F8", 786, 84, 0), ("Python", "#FFD43B" if dark else "#3572A5", 752, 212, 1.4),
-             ("Ollama", c["text"], 782, 340, 2.6), ("Kotlin", "#A97BFF", 1066, 98, 0.8),
-             ("Swift", "#F05138", 1082, 246, 2.0), ("Gemini", "#8E75FF", 1062, 392, 3.2)]
+    # Phone position; chips are laid out around it with a clear gap on both sides.
+    px, py, pw, ph = 846, 28, 214, 384
+    gap = 18
+
+    def chip_w(label: str) -> float:
+        return len(label) * 8.1 + 40
+
+    right = px + pw + gap
+    left = [("Flutter", "#54C5F8", 84, 0, 0), ("Python", "#FFD43B" if dark else "#3572A5", 212, 1.4, 20),
+            ("Ollama", c["text"], 340, 2.6, 4)]
+    chips = [(lbl, col, px - gap - chip_w(lbl) - inset, cy_, d) for lbl, col, cy_, d, inset in left]
+    chips += [("Kotlin", "#A97BFF", right, 98, 0.8), ("Swift", "#F05138", right + 10, 246, 2.0),
+              ("Gemini", "#8E75FF", right, 392, 3.2)]
     chip_svg = ""
     for i, (label, col, cx_, cy_, delay) in enumerate(chips):
-        w = len(label) * 8.1 + 40
+        w = chip_w(label)
         chip_svg += (f'<g class="float" style="animation-delay:-{delay}s">'
-                     f'<rect x="{cx_}" y="{cy_}" width="{w:.1f}" height="34" rx="17" fill="{c["chip"]}" stroke="{c["border"]}"/>'
-                     f'<circle cx="{cx_ + 17}" cy="{cy_ + 17}" r="4.5" fill="{col}"/>'
-                     f'<text x="{cx_ + 29}" y="{cy_ + 22}" font-family="{MONO}" font-size="13" font-weight="600" fill="{c["strong"]}">{x(label)}</text></g>')
+                     f'<rect x="{cx_:.1f}" y="{cy_}" width="{w:.1f}" height="34" rx="17" fill="{c["chip"]}" stroke="{c["border"]}"/>'
+                     f'<circle cx="{cx_ + 17:.1f}" cy="{cy_ + 17}" r="4.5" fill="{col}"/>'
+                     f'<text x="{cx_ + 29:.1f}" y="{cy_ + 22}" font-family="{MONO}" font-size="13" font-weight="600" fill="{c["strong"]}">{x(label)}</text></g>')
 
     # Phone mock-up with an on-device assistant
-    px, py, pw, ph = 880, 28, 214, 384
     sx, sy, sw, sh = px + 9, py + 9, pw - 18, ph - 18
     ocx, ocy = sx + sw / 2, 152
     phone = f'''
@@ -313,7 +323,10 @@ def card(theme: str, *, title: str, subtitle: str, blurb: str, tags: list[str], 
     c = THEMES[theme]
     a1, a2 = ACCENTS[accent]
     W, H = 580, 236
-    lines = textwrap.wrap(blurb, 54)[:3]
+    lines = textwrap.wrap(blurb, 54)
+    if len(lines) > 2:
+        print(f"! blurb for {title!r} wraps to {len(lines)} lines; keep it to 2 (about 100 chars)", file=sys.stderr)
+    lines = lines[:2]
 
     tags_svg, tx = "", 28.0
     stats_w = text_w(stats, 13, True)

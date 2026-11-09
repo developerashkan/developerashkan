@@ -65,6 +65,11 @@
       "tags": ["Flutter", "On-device LLM"]
     },
     {
+      "repo": "divar", "title": "Raste", "icon": "store", "accent": "lime",
+      "blurb": "Persian classifieds marketplace with OTP sign-in, buyer–seller chat, moderation and FTS5 search.",
+      "tags": ["FastAPI", "SQLite FTS5", "RTL"]
+    },
+    {
       "repo": "LocalForge", "title": "LocalForge", "icon": "terminal", "accent": "emerald",
       "blurb": "A complete offline AI development IDE powered by local models.",
       "tags": ["Python", "Local AI", "IDE"]
