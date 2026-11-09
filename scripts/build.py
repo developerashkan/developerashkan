@@ -157,32 +157,29 @@ def hero(theme: str, stats: dict) -> str:
     first, last = CFG["name"]
     A, A2, A3 = c["accent"], c["accent2"], c["accent3"]
 
-    # Typewriter (SMIL so it works inside <img>); textLength pins the width so the caret lines up.
+    # Rotating phrases, overlap-proof: only phrase 0 is visible by default (others carry
+    # opacity="0" as an attribute), and CSS fades them in one at a time. A renderer without
+    # animation support therefore shows one clean phrase, never several stacked on top of each other.
     phrases = CFG["typing"]
     n = len(phrases)
     period = 4.0
     T = n * period
     fs = 18
     tx0 = 102
-    typing, caret_vals, caret_kt = [], [], []
+    rotator = []
     for i, p in enumerate(phrases):
         w = len(p) * fs * 0.6
-        s = i * period / T
-        kt = [0.0, s, s + 1.6 / T, s + 3.1 / T, s + 3.6 / T, 1.0]
-        kts = ";".join(f"{k:.4f}" for k in kt)
-        typing.append(
-            f'<clipPath id="tc{i}"><rect x="{tx0}" y="{334 - 22}" width="0" height="32">'
-            f'<animate attributeName="width" dur="{T}s" repeatCount="indefinite" values="0;0;{w + 4:.1f};{w + 4:.1f};0;0" keyTimes="{kts}"/>'
-            f'</rect></clipPath>'
-            f'<text clip-path="url(#tc{i})" x="{tx0}" y="334" textLength="{w:.1f}" lengthAdjust="spacing" '
-            f'font-family="{MONO}" font-size="{fs}" fill="{c["strong"]}">{x(p)}</text>')
-        caret_kt += [s, s + 1.6 / T, s + 3.1 / T, s + 3.6 / T]
-        caret_vals += [tx0, tx0 + w + 3, tx0 + w + 3, tx0]
-    caret_kt.append(1.0)
-    caret_vals.append(tx0)
-    caret = (f'<rect class="blink" x="{tx0}" y="318" width="9" height="21" rx="1.5" fill="{A}">'
-             f'<animate attributeName="x" dur="{T}s" repeatCount="indefinite" '
-             f'values="{";".join(f"{v:.1f}" for v in caret_vals)}" keyTimes="{";".join(f"{k:.4f}" for k in caret_kt)}"/></rect>')
+        rotator.append(
+            f'<g class="ph ph{i}" opacity="{1 if i == 0 else 0}" style="animation-delay:{i * period:.0f}s">'
+            f'<text x="{tx0}" y="334" textLength="{w:.1f}" lengthAdjust="spacing" '
+            f'font-family="{MONO}" font-size="{fs}" fill="{c["strong"]}">{x(p)}</text>'
+            f'<rect class="blink" x="{tx0 + w + 5:.1f}" y="318" width="9" height="21" rx="1.5" fill="{A}"/></g>')
+    share = 100 / n
+    rot_css = (f".ph{{opacity:0;animation:ph {T:.0f}s ease-in-out infinite backwards}}"
+               f"@keyframes ph{{0%{{opacity:0;transform:translateY(10px)}}"
+               f"{share * 0.12:.1f}%,{share * 0.85:.1f}%{{opacity:1;transform:translateY(0)}}"
+               f"{share:.1f}%,100%{{opacity:0;transform:translateY(-10px)}}}}"
+               f"@media (prefers-reduced-motion: reduce){{.ph0{{opacity:1}}}}")
 
     # Stats row
     items = [(CFG["years"], "years shipping"), (str(stats["packages"]), "pub.dev packages"),
@@ -222,13 +219,14 @@ def hero(theme: str, stats: dict) -> str:
 <circle class="ring" cx="{ocx}" cy="{ocy}" r="30" fill="none" stroke="{A}" stroke-width="1.5"/>
 <circle class="ring r2" cx="{ocx}" cy="{ocy}" r="30" fill="none" stroke="{A2}" stroke-width="1.5"/>
 <circle class="orb" cx="{ocx}" cy="{ocy}" r="30" fill="url(#orb)"/>
-<g class="u1"><rect x="{sx + sw - 136}" y="206" width="124" height="32" rx="13" fill="url(#name)"/>
-<text x="{sx + sw - 124}" y="226" font-family="{SANS}" font-size="11.5" font-weight="600" fill="#fff">Summarize my notes</text></g>
-<g class="dots"><rect x="{sx + 12}" y="250" width="56" height="28" rx="13" fill="{c["surface"]}"/>
+<g class="u1"><rect x="{sx + sw - 152}" y="206" width="140" height="32" rx="13" fill="url(#name)"/>
+<text x="{sx + sw - 140}" y="226" textLength="116" lengthAdjust="spacingAndGlyphs" font-family="{SANS}" font-size="11.5" font-weight="600" fill="#fff">Summarize my notes</text></g>
+<g class="dots" opacity="0"><rect x="{sx + 12}" y="250" width="56" height="28" rx="13" fill="{c["surface"]}"/>
 <circle class="d d1" cx="{sx + 28}" cy="264" r="3.2" fill="{c["muted"]}"/><circle class="d d2" cx="{sx + 40}" cy="264" r="3.2" fill="{c["muted"]}"/><circle class="d d3" cx="{sx + 52}" cy="264" r="3.2" fill="{c["muted"]}"/></g>
-<g class="a1"><rect x="{sx + 12}" y="250" width="154" height="50" rx="13" fill="{c["surface"]}"/>
-<text font-family="{SANS}" font-size="11.5" fill="{c["text"]}"><tspan x="{sx + 24}" y="270">Done: 3 key points found.</tspan><tspan x="{sx + 24}" y="289">Ran 100% on your phone.</tspan></text></g>
-<g class="m1"><text x="{sx + 14}" y="322" font-family="{MONO}" font-size="10" fill="{c["muted"]}">⚡ 42 tok/s · 0 bytes sent</text></g>
+<g class="a1"><rect x="{sx + 12}" y="250" width="168" height="50" rx="13" fill="{c["surface"]}"/>
+<text x="{sx + 24}" y="270" textLength="140" lengthAdjust="spacingAndGlyphs" font-family="{SANS}" font-size="11.5" fill="{c["text"]}">Done: 3 key points found.</text>
+<text x="{sx + 24}" y="289" textLength="130" lengthAdjust="spacingAndGlyphs" font-family="{SANS}" font-size="11.5" fill="{c["text"]}">Ran 100% on your phone.</text></g>
+<g class="m1"><text x="{sx + 14}" y="322" textLength="150" lengthAdjust="spacingAndGlyphs" font-family="{MONO}" font-size="10" fill="{c["muted"]}">⚡ 42 tok/s · 0 bytes sent</text></g>
 <rect x="{sx + 10}" y="{sy + sh - 48}" width="{sw - 20}" height="34" rx="17" fill="{c["surface"]}"/>
 <text x="{sx + 26}" y="{sy + sh - 26.5}" font-family="{SANS}" font-size="11.5" fill="{c["muted"]}">Ask anything…</text>
 <circle cx="{sx + sw - 27}" cy="{sy + sh - 31}" r="12" fill="url(#name)"/>
@@ -277,7 +275,7 @@ def hero(theme: str, stats: dict) -> str:
 @keyframes m1{{0%,45%{{opacity:0}}51%,92%{{opacity:1}}100%{{opacity:0}}}}
 .d{{animation:bounce 1s ease-in-out infinite}}.d2{{animation-delay:.15s}}.d3{{animation-delay:.3s}}
 @keyframes bounce{{0%,60%,100%{{transform:translateY(0)}}30%{{transform:translateY(-4px)}}}}
-.rm-show{{display:none}}
+{rot_css}
 {REDUCED}
 </style>
 <g clip-path="url(#frame)">
@@ -299,8 +297,7 @@ def hero(theme: str, stats: dict) -> str:
 <text font-family="{SANS}" font-size="21" fill="{c["muted"]}"><tspan x="73" y="254">{x(CFG["tagline"][0])}</tspan><tspan x="73" y="284">{x(CFG["tagline"][1])}</tspan></text>
 
 <text x="74" y="334" font-family="{MONO}" font-size="{fs}" font-weight="700" fill="{A}">❯</text>
-<g class="rm-hide">{"".join(typing)}{caret}</g>
-<text class="rm-show" x="{tx0}" y="334" font-family="{MONO}" font-size="{fs}" fill="{c["strong"]}">{x(phrases[0])}</text>
+{"".join(rotator)}
 
 {stat_svg}
 {phone}
