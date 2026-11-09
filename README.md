@@ -71,16 +71,16 @@ These days I work where mobile meets AI: **models that run on the device**, **ag
 <a href="https://github.com/developerashkan/Local-LLM-Powered-Subtitle-Translator#gh-dark-mode-only"><img alt="SubLingo: Translates .srt subtitles with local LLMs via Ollama while keeping timing and formatting intact." src="assets/proj-Local-LLM-Powered-Subtitle-Translator-dark.svg" width="49%"></a><a href="https://github.com/developerashkan/Local-LLM-Powered-Subtitle-Translator#gh-light-mode-only"><img alt="SubLingo: Translates .srt subtitles with local LLMs via Ollama while keeping timing and formatting intact." src="assets/proj-Local-LLM-Powered-Subtitle-Translator-light.svg" width="49%"></a>
 <a href="https://github.com/developerashkan/insight_radar#gh-dark-mode-only"><img alt="Insight Radar: Autonomous agent that monitors trending events, verifies live sources and scores confidence." src="assets/proj-insight_radar-dark.svg" width="49%"></a><a href="https://github.com/developerashkan/insight_radar#gh-light-mode-only"><img alt="Insight Radar: Autonomous agent that monitors trending events, verifies live sources and scores confidence." src="assets/proj-insight_radar-light.svg" width="49%"></a>
 <a href="https://github.com/developerashkan/agentkit#gh-dark-mode-only"><img alt="AgentKit: Modular Python toolkit to build, test and deploy AI agents with plug-ins and skill orchestration." src="assets/proj-agentkit-dark.svg" width="49%"></a><a href="https://github.com/developerashkan/agentkit#gh-light-mode-only"><img alt="AgentKit: Modular Python toolkit to build, test and deploy AI agents with plug-ins and skill orchestration." src="assets/proj-agentkit-light.svg" width="49%"></a>
+<a href="https://github.com/developerashkan/gzip_chat#gh-dark-mode-only"><img alt="gzip_chat: Zero-weight “language model”: writes Shakespeare by picking the most zlib-compressible continuation." src="assets/proj-gzip_chat-dark.svg" width="49%"></a><a href="https://github.com/developerashkan/gzip_chat#gh-light-mode-only"><img alt="gzip_chat: Zero-weight “language model”: writes Shakespeare by picking the most zlib-compressible continuation." src="assets/proj-gzip_chat-light.svg" width="49%"></a>
 
 </div>
 
 <details>
-<summary><b>+ 8 more projects</b></summary>
+<summary><b>+ 7 more projects</b></summary>
 <br>
 
 | Project | What it does | Stack |
 | :-- | :-- | :-- |
-| [**gzip_chat**](https://github.com/developerashkan/gzip_chat) | Zero-weight “language model” that writes Shakespeare via zlib compression | `Flutter` |
 | [**genui_gemini**](https://github.com/developerashkan/genui_gemini) | Dynamic AI-generated UI with Google Gemini | `Flutter · Gemini` |
 | [**ollama_flutter**](https://github.com/developerashkan/ollama_flutter) | Modern chat UI for local Ollama models | `Flutter · Ollama` |
 | [**smart_support_agent**](https://github.com/developerashkan/smart_support_agent) | Customer-support agent that routes requests and checks orders | `LangGraph · Gemini` |
