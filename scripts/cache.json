@@ -1,351 +1,575 @@
 {
+  "not_on_pub": [
+    "Chat-GPT-Flutter",
+    "DALL-E-Flutter",
+    "ai_credit_card",
+    "genui_gemini",
+    "gzip_chat",
+    "offline-ai-with-smollm2",
+    "ollama_flutter",
+    "world_lens"
+  ],
   "pub": {
     "app_bar_search": {
-      "dl30": 104,
+      "description": "A beautiful Flutter app bar with built-in search: six modern designs (pill, glass, gradient, floating, spotlight), ten animations, keyboard shortcuts, RTL, responsive and accessible.",
+      "discovered": false,
+      "dl30": 231,
       "likes": 4,
       "max_points": 160,
       "points": 150,
-      "version": "1.2.0"
+      "published": "2026-11-10T19:15:40.427454Z",
+      "version": "2.0.1"
     },
     "azure_speech_recognition_services": {
-      "dl30": 84,
+      "description": "Azure AI Speech speech-to-text for Flutter: streaming partial and final results, continuous recognition, language auto-detect, phrase lists, word timestamps, diarization, pronunciation assessment and token auth. Android, iOS and web.",
+      "discovered": false,
+      "dl30": 175,
       "likes": 1,
       "max_points": 160,
-      "points": 150,
-      "version": "0.0.3"
+      "points": 140,
+      "published": "2026-11-10T23:21:17.226952Z",
+      "version": "1.0.0"
     },
     "car_license_plate": {
-      "dl30": 98,
-      "likes": 6,
+      "description": "Realistic, scalable licence plate widgets and validators for 20 countries: Iran, EU, UK, USA, Japan, China, India, Brazil and more.",
+      "discovered": false,
+      "dl30": 202,
+      "likes": 7,
       "max_points": 160,
-      "points": 150,
-      "version": "1.0.3"
+      "points": 160,
+      "published": "2026-11-10T19:54:58.051981Z",
+      "version": "2.0.1"
     },
     "device_finder": {
-      "dl30": 71,
+      "description": "Offline Bluetooth device finding for Flutter: a pure-Dart Kalman-filtered RSSI engine with per-observer trilateration, plus a holographic, orbitable 3D radar widget. Pair with device_finder_ble for capture.",
+      "discovered": false,
+      "dl30": 200,
       "likes": 1,
       "max_points": 160,
       "points": 150,
-      "version": "0.1.4"
+      "published": "2026-11-09T21:29:29.391219Z",
+      "version": "0.2.0"
     },
     "generative_shader_ui": {
-      "dl30": 0,
-      "likes": 0,
+      "description": "GPU shader widgets: auto skeleton loader, liquid glass, particles, Siri orb and waves, neon buttons, ripples, reveal transitions. No GLSL needed.",
+      "discovered": false,
+      "dl30": 200,
+      "likes": 1,
       "max_points": 160,
       "points": 160,
+      "published": "2026-11-09T15:32:03.901979Z",
       "version": "1.1.0"
     },
     "ollama_easy": {
-      "dl30": 19,
+      "description": "Complete Ollama client for Dart and Flutter: streaming chat, tool-calling loops, structured outputs, thinking, vision, embeddings, model management, cancel tokens, retries.",
+      "discovered": false,
+      "dl30": 95,
       "likes": 1,
       "max_points": 160,
-      "points": 150,
-      "version": "0.2.0"
+      "points": 160,
+      "published": "2026-11-10T22:08:15.070803Z",
+      "version": "1.0.0"
     },
     "performance_list_view": {
-      "dl30": 17,
-      "likes": 2,
-      "max_points": 160,
-      "points": 140,
-      "version": "0.0.5"
-    },
-    "rehoboam_neural_ui": {
-      "dl30": 32,
+      "description": "Fast Flutter list, grid and masonry with pagination that never gets stuck, pull-to-refresh, sticky headers, skeletons, scroll-to-index and an AI chat streaming view.",
+      "discovered": false,
+      "dl30": 97,
       "likes": 2,
       "max_points": 160,
       "points": 160,
-      "version": "0.0.7"
+      "published": "2026-11-10T22:12:08.048913Z",
+      "version": "1.0.0"
+    },
+    "rehoboam_neural_ui": {
+      "description": "AI-native Flutter UI. Liquid-glass orb, voice and chat widgets, the Rehoboam HUD and 3D globe, plus an agent for Claude, Gemini, OpenAI, Genkit and any LLM.",
+      "discovered": false,
+      "dl30": 119,
+      "likes": 2,
+      "max_points": 160,
+      "points": 160,
+      "published": "2026-11-10T22:01:50.774493Z",
+      "version": "1.1.0"
     },
     "smart_progress_circle": {
-      "dl30": 34,
+      "description": "SmartProgressCircle is a customizable Flutter widget for displaying dynamic circular progress. Ideal for real-time updates in apps like fitness trackers and dashboards.",
+      "discovered": false,
+      "dl30": 33,
       "likes": 3,
       "max_points": 160,
       "points": 130,
+      "published": "2026-07-01T19:06:09.915899Z",
       "version": "0.1.0"
     },
     "smart_refresh_token": {
-      "dl30": 28,
+      "description": "Race-free automatic access/refresh token handling for Dio. Single-flight refresh, request replay, proactive JWT expiry refresh, logout-safe, and pluggable secure storage on every platform.",
+      "discovered": false,
+      "dl30": 102,
       "likes": 2,
       "max_points": 160,
       "points": 150,
-      "version": "0.1.2"
+      "published": "2026-11-10T17:29:34.909477Z",
+      "version": "0.2.0"
     }
   },
   "repos": {
     "Chat-GPT-Flutter": {
+      "archived": false,
+      "created_at": "2023-01-14T21:09:14Z",
+      "description": "Flutter app  using OpenAI's GPT-3",
       "fork": false,
       "forks": 0,
       "language": "Dart",
+      "pushed_at": "2026-07-05T09:13:49Z",
       "stars": 6
     },
     "DALL-E-Flutter": {
+      "archived": false,
+      "created_at": "2023-02-02T09:57:12Z",
+      "description": "Flutter app that generate images using OpenAI's DALL-E",
       "fork": false,
       "forks": 0,
       "language": "Dart",
+      "pushed_at": "2026-07-05T09:20:34Z",
       "stars": 6
     },
     "Gantt-Chart-Generator": {
+      "archived": false,
+      "created_at": "2026-01-29T15:46:12Z",
+      "description": "A lightweight, terminal-based tool that instantly converts text-based task lists into visual Gantt charts using Python and Matplotlib.",
       "fork": false,
       "forks": 0,
       "language": "Python",
+      "pushed_at": "2026-01-31T09:30:03Z",
       "stars": 4
     },
     "JobGrabberAgent": {
+      "archived": false,
+      "created_at": "2026-01-07T09:55:17Z",
+      "description": "Ai agent Grab the jobs based on user requests",
       "fork": false,
       "forks": 0,
       "language": "TypeScript",
+      "pushed_at": "2026-01-07T09:55:34Z",
       "stars": 2
     },
     "Local-LLM-Powered-Subtitle-Translator": {
+      "archived": false,
+      "created_at": "2026-01-31T15:38:29Z",
+      "description": "SubLingo is a robust, local LLM-powered tool designed to translate subtitle files (`.srt`) while maintaining strict formatting. By leveraging Ollama, it ensures your data stays private, secure, and runs entirely on your local machine.",
       "fork": false,
       "forks": 0,
       "language": "Python",
+      "pushed_at": "2026-01-31T15:51:47Z",
       "stars": 5
     },
     "LocalForge": {
+      "archived": false,
+      "created_at": "2026-02-06T17:47:57Z",
+      "description": " A complete offline AI development IDE",
       "fork": false,
       "forks": 0,
       "language": "Python",
+      "pushed_at": "2026-02-06T17:56:39Z",
       "stars": 3
     },
     "LocalMind": {
+      "archived": false,
+      "created_at": "2026-02-06T19:15:39Z",
+      "description": "A Jetpack Compose Android app with local database and AI-powered note suggestions using Ollama.",
       "fork": false,
       "forks": 0,
       "language": "Kotlin",
+      "pushed_at": "2026-02-06T19:40:06Z",
       "stars": 2
     },
     "MoneyMate": {
+      "archived": false,
+      "created_at": "2026-02-10T15:59:59Z",
+      "description": "A lightweight, privacy-first personal finance tracker built in Python that helps users easily track their income and expenses, visualize spending patterns, and generate simple reports \u2014 from the terminal or desktop GUI.",
       "fork": false,
       "forks": 0,
       "language": "Python",
+      "pushed_at": "2026-02-10T16:11:49Z",
       "stars": 2
     },
     "YoutubeThumbResizer": {
+      "archived": false,
+      "created_at": "2026-02-11T16:48:56Z",
+      "description": "",
       "fork": false,
       "forks": 0,
       "language": "Python",
+      "pushed_at": "2026-02-11T19:36:53Z",
       "stars": 2
     },
     "agentic_researcher": {
+      "archived": false,
+      "created_at": "2025-12-24T15:18:18Z",
+      "description": "An intelligent AI-powered research assistant that autonomously searches, evaluates, and summarizes academic articles using Azure OpenAI.",
       "fork": false,
       "forks": 0,
       "language": "Python",
+      "pushed_at": "2025-12-24T15:20:12Z",
       "stars": 2
     },
     "agentkit": {
+      "archived": false,
+      "created_at": "2026-02-05T20:13:19Z",
+      "description": "\u201cPython-AI-Agent-Toolkit \u2014 A high-performance, modular toolkit for building, testing, and deploying Python AI agents with extensible plug-in support, real-time analytics, and Claude-style skill orchestration.\u201d",
       "fork": false,
       "forks": 0,
       "language": "Python",
+      "pushed_at": "2026-02-05T20:31:12Z",
       "stars": 2
     },
     "ai_credit_card": {
+      "archived": false,
+      "created_at": "2023-11-10T21:07:31Z",
+      "description": "Detect Credit Card Number With ML",
       "fork": false,
       "forks": 0,
       "language": "Dart",
+      "pushed_at": "2023-12-27T12:14:03Z",
       "stars": 3
     },
     "app_bar_search": {
+      "archived": false,
+      "created_at": "2022-11-22T09:24:09Z",
+      "description": "Create flutter package for searchable appbar. Also available in pub.dev",
       "fork": false,
       "forks": 0,
       "language": "Dart",
+      "pushed_at": "2026-11-10T18:46:28Z",
       "stars": 7
     },
     "ashkan-portfolio": {
+      "archived": false,
+      "created_at": "2026-08-21T13:45:11Z",
+      "description": "",
       "fork": false,
       "forks": 0,
       "language": "JavaScript",
+      "pushed_at": "2026-09-03T20:35:45Z",
       "stars": 0
     },
     "ashkan_bahmani_cv": {
+      "archived": false,
+      "created_at": "2024-01-16T22:09:34Z",
+      "description": "",
       "fork": false,
       "forks": 0,
       "language": "JavaScript",
+      "pushed_at": "2026-07-27T10:47:48Z",
       "stars": 1
     },
     "ashkanbmn.github.io": {
+      "archived": false,
+      "created_at": "2023-04-13T22:32:29Z",
+      "description": "",
       "fork": false,
       "forks": 0,
       "language": null,
+      "pushed_at": "2023-04-13T22:32:30Z",
       "stars": 3
     },
     "azure_communication_call": {
+      "archived": false,
+      "created_at": "2026-05-29T14:44:35Z",
+      "description": "Azure Communication Call for Flutter",
       "fork": true,
       "forks": 0,
       "language": null,
+      "pushed_at": "2025-10-30T09:12:23Z",
       "stars": 3
     },
     "azure_speech_recognition_services": {
+      "archived": false,
+      "created_at": "2026-02-23T14:48:42Z",
+      "description": "A Flutter integration for Microsoft Azure\u2019s speech-to-text recognition service.",
       "fork": false,
       "forks": 0,
       "language": "Dart",
+      "pushed_at": "2026-11-10T23:16:01Z",
       "stars": 4
     },
     "bmi_calculator": {
+      "archived": false,
+      "created_at": "2023-04-13T23:11:54Z",
+      "description": "",
       "fork": false,
       "forks": 0,
       "language": "JavaScript",
+      "pushed_at": "2023-12-27T13:02:10Z",
       "stars": 4
     },
     "car_license_plate": {
+      "archived": false,
+      "created_at": "2023-10-07T08:55:53Z",
+      "description": "Vehicle License Plates",
       "fork": false,
       "forks": 0,
       "language": "Dart",
+      "pushed_at": "2026-11-10T19:52:27Z",
       "stars": 7
     },
     "crypto_analysis_agent": {
+      "archived": false,
+      "created_at": "2025-12-22T14:12:40Z",
+      "description": "",
       "fork": false,
       "forks": 0,
       "language": "Python",
+      "pushed_at": "2025-12-23T17:10:44Z",
       "stars": 4
     },
     "deepdata": {
+      "archived": false,
+      "created_at": "2026-09-21T09:38:05Z",
+      "description": "",
       "fork": false,
       "forks": 0,
       "language": "HTML",
+      "pushed_at": "2026-09-21T09:41:57Z",
       "stars": 0
     },
     "deepdataco": {
+      "archived": false,
+      "created_at": "2026-08-21T16:03:36Z",
+      "description": "",
       "fork": false,
       "forks": 0,
       "language": "JavaScript",
+      "pushed_at": "2026-09-03T16:27:50Z",
       "stars": 0
     },
     "developerashkan": {
+      "archived": false,
+      "created_at": "2022-12-03T13:39:03Z",
+      "description": "",
       "fork": false,
       "forks": 0,
       "language": "Python",
+      "pushed_at": "2026-11-09T20:11:33Z",
       "stars": 1
     },
     "device_finder": {
+      "archived": false,
+      "created_at": "2026-08-06T12:26:59Z",
+      "description": "Fully offline Bluetooth device tracking for Flutter. Pure Dart RSSI processing with Kalman filtering, trilateration, offline calibration profiles, and a smooth radar UI.",
       "fork": false,
       "forks": 0,
       "language": "Dart",
+      "pushed_at": "2026-11-09T21:25:48Z",
       "stars": 5
     },
     "divar": {
+      "archived": false,
+      "created_at": "2026-11-04T22:32:55Z",
+      "description": "",
       "fork": false,
       "forks": 0,
       "language": "Python",
+      "pushed_at": "2026-11-04T23:12:50Z",
       "stars": 2
     },
     "english_teacher_agent": {
+      "archived": false,
+      "created_at": "2025-12-27T20:49:30Z",
+      "description": "AI voice agent that teach english",
       "fork": false,
       "forks": 0,
       "language": "TypeScript",
+      "pushed_at": "2025-12-29T13:57:23Z",
       "stars": 2
     },
     "esp32-weather-station": {
+      "archived": false,
+      "created_at": "2026-07-04T09:21:54Z",
+      "description": "",
       "fork": false,
       "forks": 0,
       "language": "Python",
+      "pushed_at": "2026-07-04T09:22:03Z",
       "stars": 3
     },
     "generative_shader_ui": {
+      "archived": false,
+      "created_at": "2026-11-08T16:16:45Z",
+      "description": "",
       "fork": false,
       "forks": 0,
       "language": "Dart",
-      "stars": 0
+      "pushed_at": "2026-11-09T15:24:12Z",
+      "stars": 1
     },
     "genui_gemini": {
+      "archived": false,
+      "created_at": "2025-12-26T20:51:16Z",
+      "description": "genui_gemini project with dynamic AI-driven UI using Flutter and Google Gemini",
       "fork": false,
-      "forks": 1,
+      "forks": 2,
       "language": "Dart",
-      "stars": 4
+      "pushed_at": "2025-12-27T10:28:23Z",
+      "stars": 5
     },
     "gzip_chat": {
+      "archived": false,
+      "created_at": "2026-06-27T06:11:03Z",
+      "description": "A Flutter chat app powered by a zero-weight language model that generates text using zlib compression to identify the most statistically compressible continuations within the complete works of Shakespeare.",
       "fork": false,
       "forks": 0,
       "language": "Dart",
+      "pushed_at": "2026-07-01T17:59:56Z",
       "stars": 3
     },
     "insight_radar": {
+      "archived": false,
+      "created_at": "2025-12-29T13:49:12Z",
+      "description": "Real-time autonomous agent for monitoring, verifying, and explaining trending events with live sources and confidence scoring.",
       "fork": false,
       "forks": 0,
       "language": "TypeScript",
+      "pushed_at": "2025-12-29T13:54:33Z",
       "stars": 2
     },
     "offline-ai-with-smollm2": {
+      "archived": false,
+      "created_at": "2026-06-28T19:52:03Z",
+      "description": "A modern high-performance offline chat application built with Flutter and the pure Dart smollm2 inference engine. This app runs a Large Language Model (LLM) entirely on your device with no internet connection required.",
       "fork": false,
       "forks": 0,
       "language": "Dart",
+      "pushed_at": "2026-06-28T19:52:51Z",
       "stars": 3
     },
     "ollama_easy": {
+      "archived": false,
+      "created_at": "2026-06-26T04:35:48Z",
+      "description": "one-line ask(), streaming askStream(), typed chat messages, askJson(), embeddings, model listing, ensureModel(), pull progress, version/running checks, local and cloud constructors.",
       "fork": false,
       "forks": 0,
       "language": "Dart",
+      "pushed_at": "2026-11-10T22:01:13Z",
       "stars": 3
     },
     "ollama_flutter": {
+      "archived": false,
+      "created_at": "2025-12-28T17:57:30Z",
+      "description": "A modern Flutter chat UI for local Ollama AI models. Built for speed, privacy, and ease of use.",
       "fork": false,
       "forks": 1,
       "language": "Dart",
-      "stars": 4
+      "pushed_at": "2026-01-26T07:06:45Z",
+      "stars": 5
     },
     "packages": {
+      "archived": false,
+      "created_at": "2026-08-01T13:40:00Z",
+      "description": "A collection of useful packages maintained by the Flutter team",
       "fork": true,
       "forks": 0,
       "language": null,
+      "pushed_at": "2026-08-23T05:55:09Z",
       "stars": 0
     },
     "performance_list_view": {
+      "archived": false,
+      "created_at": "2026-01-02T18:51:28Z",
+      "description": "A production-ready Flutter list wrapper. Features built-in pagination, pull-to-refresh, error states, grid support, and aggressive image memory caching. Supports Slivers.",
       "fork": false,
       "forks": 0,
       "language": "Dart",
+      "pushed_at": "2026-11-10T22:04:32Z",
       "stars": 4
     },
     "portfolio": {
+      "archived": false,
+      "created_at": "2026-09-04T15:38:36Z",
+      "description": "",
       "fork": false,
       "forks": 0,
       "language": "TypeScript",
+      "pushed_at": "2026-09-04T15:42:17Z",
       "stars": 0
     },
     "rehoboam_neural_ui": {
+      "archived": false,
+      "created_at": "2026-08-14T12:07:00Z",
+      "description": "A high-fidelity Rehoboam-style neural HUD for Flutter with organic particles and a 3D Earth globe with geographic mapping.",
       "fork": false,
       "forks": 0,
       "language": "Dart",
-      "stars": 2
+      "pushed_at": "2026-11-10T21:52:10Z",
+      "stars": 3
     },
     "rtl-lite-cv": {
+      "archived": false,
+      "created_at": "2026-01-01T17:33:07Z",
+      "description": "",
       "fork": false,
       "forks": 0,
       "language": "Typst",
+      "pushed_at": "2026-01-01T19:37:22Z",
       "stars": 2
     },
     "smart_progress_circle": {
+      "archived": false,
+      "created_at": "2024-10-23T14:03:09Z",
+      "description": "The Circular Progress Bar Flutter Plugin is a customizable widget that displays a circular progress indicator with interactive features.",
       "fork": false,
       "forks": 0,
       "language": "Dart",
+      "pushed_at": "2026-07-01T19:04:31Z",
       "stars": 4
     },
     "smart_refresh_token": {
+      "archived": false,
+      "created_at": "2025-10-08T09:56:07Z",
+      "description": "A smart Flutter package for automatic Dio tokenrefresh handling. This package simplifies managing access and refresh tokens in your Flutter apps and automatically retries failed requests after refreshing tokens.",
       "fork": false,
       "forks": 0,
       "language": "Dart",
+      "pushed_at": "2026-11-10T17:23:23Z",
       "stars": 5
     },
     "smart_support_agent": {
+      "archived": false,
+      "created_at": "2026-08-25T16:02:10Z",
+      "description": "AI customer support app using LangGraph and Gemini to route requests, check orders, create tickets, and respond through a fast Dockerized web UI.",
       "fork": false,
       "forks": 0,
       "language": "HTML",
-      "stars": 0
+      "pushed_at": "2026-08-25T16:04:02Z",
+      "stars": 1
     },
     "telegram-summarizer-bot": {
+      "archived": false,
+      "created_at": "2025-12-17T13:56:24Z",
+      "description": "",
       "fork": false,
       "forks": 0,
       "language": "Python",
+      "pushed_at": "2025-12-28T07:36:35Z",
       "stars": 4
     },
     "telegram-translator-bot": {
+      "archived": false,
+      "created_at": "2025-12-17T13:40:39Z",
+      "description": "",
       "fork": false,
       "forks": 0,
       "language": "Python",
+      "pushed_at": "2025-12-28T07:30:29Z",
       "stars": 4
     },
     "world_lens": {
+      "archived": false,
+      "created_at": "2026-07-22T12:36:12Z",
+      "description": "World Lens is a high performance Flutter application designed for realtime global intelligence monitoring",
       "fork": false,
       "forks": 0,
       "language": "Dart",
+      "pushed_at": "2026-07-27T20:56:52Z",
       "stars": 3
     }
   },

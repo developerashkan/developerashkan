@@ -7,11 +7,11 @@
 <br>
 
 <a href="mailto:ashkanbhmn@gmail.com"><img alt="Email" src="https://img.shields.io/badge/email-ashkanbhmn%40gmail.com-22d3ee?style=flat-square&logo=gmail&logoColor=white&labelColor=0d1117"></a>
-<a href="#packages"><img alt="pub.dev" src="https://img.shields.io/badge/pub.dev-10_Flutter_packages-0175c2?style=flat-square&logo=dart&logoColor=white&labelColor=0d1117"></a>
+<!-- auto:pub-badge --><a href="#packages"><img alt="pub.dev" src="https://img.shields.io/badge/pub.dev-10_Flutter_packages-0175c2?style=flat-square&logo=dart&logoColor=white&labelColor=0d1117"></a><!-- /auto:pub-badge -->
 <a href="https://github.com/developerashkan?tab=followers"><img alt="Followers" src="https://img.shields.io/github/followers/developerashkan?style=flat-square&logo=github&label=followers&color=a78bfa&labelColor=0d1117"></a>
 <a href="https://github.com/ashkanvit"><img alt="Secondary account" src="https://img.shields.io/badge/also-@ashkanvit-f472b6?style=flat-square&logo=github&logoColor=white&labelColor=0d1117"></a>
 
-<sub><a href="#now"><b>Now</b></a> &nbsp;·&nbsp; <a href="#packages"><b>Packages</b></a> &nbsp;·&nbsp; <a href="#projects"><b>Projects</b></a> &nbsp;·&nbsp; <a href="#stack"><b>Toolkit</b></a> &nbsp;·&nbsp; <a href="#activity"><b>Activity</b></a> &nbsp;·&nbsp; <a href="#contact"><b>Contact</b></a></sub>
+<sub><a href="#now"><b>Now</b></a> &nbsp;·&nbsp; <a href="#research"><b>Research</b></a> &nbsp;·&nbsp; <a href="#packages"><b>Packages</b></a> &nbsp;·&nbsp; <a href="#projects"><b>Projects</b></a> &nbsp;·&nbsp; <a href="#stack"><b>Toolkit</b></a> &nbsp;·&nbsp; <a href="#activity"><b>Activity</b></a> &nbsp;·&nbsp; <a href="#contact"><b>Contact</b></a></sub>
 
 </div>
 
@@ -23,15 +23,21 @@
 I'm **Ashkan**, a mobile engineer with **8+ years** shipping Flutter, Kotlin and Swift apps.
 These days I work where mobile meets AI: **models that run on the device**, **agents that act on their own**, and **interfaces that feel alive**.
 
-| &nbsp;Shipping | &nbsp;Exploring | &nbsp;Open to |
-| :-- | :-- | :-- |
-| [`generative_shader_ui`](https://pub.dev/packages/generative_shader_ui) 1.1: GPU shader widgets for Flutter | On-device LLM inference in pure Dart | Mobile & AI engineering roles |
-| [`device_finder`](https://pub.dev/packages/device_finder): offline BLE tracking with Kalman-filtered RSSI | Autonomous agents with LangGraph, Gemini & Ollama | Freelance projects & OSS collaborations |
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/now-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/now-light.svg"><img alt="What I am working on right now and my latest pub.dev releases, refreshed automatically" src="assets/now-dark.svg" width="100%"></picture>
 
 <br>
 
+<a name="research"></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/section-research-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/section-research-light.svg"><img alt="02 Predicting the future" src="assets/section-research-dark.svg" width="100%"></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/foresight-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/foresight-light.svg"><img alt="Left: a football pitch where every player's next two seconds are forecast live with uncertainty, plus the most likely next pass. Right: a dashcam view tracking cars with IDs, their predicted paths, the lead car's time-to-collision and a cut-in alert." src="assets/foresight-dark.svg" width="100%"></picture>
+
+<sub>Two research projects, simulated here frame by frame: <b>FutureHuman3D</b> forecasts human motion 2 s ahead from video, and <b>Foresight</b> is an offline dashcam that tracks traffic, predicts paths and warns before a collision. Both run fully on-device.</sub>
+
+<br><br>
+
 <a name="packages"></a>
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/section-packages-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/section-packages-light.svg"><img alt="02 Open-source packages" src="assets/section-packages-dark.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/section-packages-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/section-packages-light.svg"><img alt="03 Open-source packages" src="assets/section-packages-dark.svg" width="100%"></picture>
 
 <div align="center">
 
@@ -45,22 +51,24 @@ These days I work where mobile meets AI: **models that run on the device**, **ag
 </div>
 
 <details>
-<summary><b>+ 4 more packages</b></summary>
+<!-- auto:more-packages-summary --><summary><b>+ 4 more packages</b></summary><!-- /auto:more-packages-summary -->
 <br>
+<!-- auto:more-packages -->
 
 | Package | What it does | Live |
 | :-- | :-- | :-- |
-| [`smart_refresh_token`](https://pub.dev/packages/smart_refresh_token) | Automatic Dio token refresh with request queueing | ![version](https://img.shields.io/pub/v/smart_refresh_token?style=flat-square&label=&color=22d3ee&labelColor=0d1117) ![points](https://img.shields.io/pub/points/smart_refresh_token?style=flat-square&label=pts&color=a78bfa&labelColor=0d1117) |
-| [`performance_list_view`](https://pub.dev/packages/performance_list_view) | Pagination, pull-to-refresh, error states, image memory optimisation | ![version](https://img.shields.io/pub/v/performance_list_view?style=flat-square&label=&color=22d3ee&labelColor=0d1117) ![points](https://img.shields.io/pub/points/performance_list_view?style=flat-square&label=pts&color=a78bfa&labelColor=0d1117) |
-| [`azure_speech_recognition_services`](https://pub.dev/packages/azure_speech_recognition_services) | Azure speech-to-text for Flutter | ![version](https://img.shields.io/pub/v/azure_speech_recognition_services?style=flat-square&label=&color=22d3ee&labelColor=0d1117) ![points](https://img.shields.io/pub/points/azure_speech_recognition_services?style=flat-square&label=pts&color=a78bfa&labelColor=0d1117) |
+| [`smart_refresh_token`](https://pub.dev/packages/smart_refresh_token) | Race-free Dio token refresh: single-flight, request replay, proactive JWT refresh | ![version](https://img.shields.io/pub/v/smart_refresh_token?style=flat-square&label=&color=22d3ee&labelColor=0d1117) ![points](https://img.shields.io/pub/points/smart_refresh_token?style=flat-square&label=pts&color=a78bfa&labelColor=0d1117) |
+| [`performance_list_view`](https://pub.dev/packages/performance_list_view) | Fast lists, grids and masonry with pagination that never gets stuck, plus an AI chat view | ![version](https://img.shields.io/pub/v/performance_list_view?style=flat-square&label=&color=22d3ee&labelColor=0d1117) ![points](https://img.shields.io/pub/points/performance_list_view?style=flat-square&label=pts&color=a78bfa&labelColor=0d1117) |
+| [`azure_speech_recognition_services`](https://pub.dev/packages/azure_speech_recognition_services) | Azure speech-to-text: streaming results, auto language detect, diarization | ![version](https://img.shields.io/pub/v/azure_speech_recognition_services?style=flat-square&label=&color=22d3ee&labelColor=0d1117) ![points](https://img.shields.io/pub/points/azure_speech_recognition_services?style=flat-square&label=pts&color=a78bfa&labelColor=0d1117) |
 | [`smart_progress_circle`](https://pub.dev/packages/smart_progress_circle) | Customisable, gesture-driven circular progress | ![version](https://img.shields.io/pub/v/smart_progress_circle?style=flat-square&label=&color=22d3ee&labelColor=0d1117) ![points](https://img.shields.io/pub/points/smart_progress_circle?style=flat-square&label=pts&color=a78bfa&labelColor=0d1117) |
 
+<!-- /auto:more-packages -->
 </details>
 
 <br>
 
 <a name="projects"></a>
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/section-projects-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/section-projects-light.svg"><img alt="03 Selected projects" src="assets/section-projects-dark.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/section-projects-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/section-projects-light.svg"><img alt="04 Selected projects" src="assets/section-projects-dark.svg" width="100%"></picture>
 
 <div align="center">
 
@@ -94,7 +102,7 @@ These days I work where mobile meets AI: **models that run on the device**, **ag
 <br>
 
 <a name="stack"></a>
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/section-stack-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/section-stack-light.svg"><img alt="04 Toolkit" src="assets/section-stack-dark.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/section-stack-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/section-stack-light.svg"><img alt="05 Toolkit" src="assets/section-stack-dark.svg" width="100%"></picture>
 
 | | Tools | How I use them |
 | :-- | :-- | :-- |
@@ -106,7 +114,7 @@ These days I work where mobile meets AI: **models that run on the device**, **ag
 <br>
 
 <a name="activity"></a>
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/section-activity-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/section-activity-light.svg"><img alt="05 Activity" src="assets/section-activity-dark.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/section-activity-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/section-activity-light.svg"><img alt="06 Activity" src="assets/section-activity-dark.svg" width="100%"></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stats-light.svg"><img alt="GitHub and pub.dev statistics" src="assets/stats-dark.svg" width="100%"></picture>
 
@@ -131,6 +139,6 @@ These days I work where mobile meets AI: **models that run on the device**, **ag
 
 <br><br>
 
-<sub>Cards and stats are generated by <a href="scripts/build.py"><code>scripts/build.py</code></a> and refreshed weekly by GitHub Actions · <a href="#top">back to top ↑</a></sub>
+<sub>Cards and stats are generated by <a href="scripts/build.py"><code>scripts/build.py</code></a> and refreshed every 3 hours by GitHub Actions · <a href="#top">back to top ↑</a></sub>
 
 </div>

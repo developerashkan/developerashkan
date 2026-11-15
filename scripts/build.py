@@ -20,6 +20,11 @@ ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
 CFG = json.loads((ROOT / "scripts" / "profile.json").read_text("utf-8"))
 CACHE_FILE = ROOT / "scripts" / "cache.json"
+README = ROOT / "README.md"
+NOW = dt.datetime.now(dt.timezone.utc)
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import foresight  # noqa: E402
 
 SANS = "'Inter','Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',Arial,sans-serif"
 MONO = "'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace"
@@ -87,39 +92,117 @@ def _get(url: str):
         return json.load(r)
 
 
+def _get_all(url: str) -> list:
+    """Follow GitHub pagination (100 per page)."""
+    out, page = [], 1
+    while True:
+        batch = _get(f"{url}{'&' if '?' in url else '?'}per_page=100&page={page}")
+        out += batch
+        if len(batch) < 100:
+            return out
+        page += 1
+
+
 def collect() -> dict:
     cache = json.loads(CACHE_FILE.read_text("utf-8")) if CACHE_FILE.exists() else {}
     user = CFG["user"]
-    data = {"user": cache.get("user", {}), "repos": cache.get("repos", {}), "pub": cache.get("pub", {})}
+    data = {"user": cache.get("user", {}), "repos": cache.get("repos", {}), "pub": cache.get("pub", {}),
+            "not_on_pub": cache.get("not_on_pub", [])}
 
     try:
         u = _get(f"https://api.github.com/users/{user}")
         data["user"] = {"followers": u["followers"], "public_repos": u["public_repos"], "created_at": u["created_at"]}
-        repos = _get(f"https://api.github.com/users/{user}/repos?per_page=100&type=owner")
+        repos = _get_all(f"https://api.github.com/users/{user}/repos?type=owner&sort=pushed")
         data["repos"] = {
-            r["name"]: {"stars": r["stargazers_count"], "forks": r["forks_count"], "language": r["language"], "fork": r["fork"]}
+            r["name"]: {"stars": r["stargazers_count"], "forks": r["forks_count"], "language": r["language"],
+                        "fork": r["fork"], "archived": r.get("archived", False), "pushed_at": r["pushed_at"],
+                        "created_at": r["created_at"], "description": r["description"] or ""}
             for r in repos
         }
     except Exception as e:  # noqa: BLE001
         print(f"! GitHub API failed, using cache: {e}", file=sys.stderr)
 
-    pkgs = [p["id"] for p in CFG["packages"]] + [p["id"] for p in CFG["more_packages"]]
-    for p in pkgs:
+    # Discover packages automatically: any own Dart repo whose name is a pub.dev package
+    # that points back at this GitHub account counts, so a newly published package
+    # shows up without touching profile.json.
+    known = {p["id"] for p in CFG["packages"]} | {p["id"] for p in CFG["more_packages"]}
+    skip = set(CFG.get("not_packages", []))
+    for name, r in data["repos"].items():
+        if r["fork"] or r["language"] != "Dart" or name in known or name in skip or name in data["pub"]:
+            continue
+        if name in data["not_on_pub"] and not _pushed_recently(r, days=14):
+            continue
+        try:
+            info = _get(f"https://pub.dev/api/packages/{name}")
+            pubspec = info["latest"]["pubspec"]
+            links = " ".join(str(pubspec.get(k, "")) for k in ("repository", "homepage", "issue_tracker"))
+            if f"github.com/{user}/".lower() in links.lower():
+                data["pub"][name] = {"discovered": True}
+                if name in data["not_on_pub"]:
+                    data["not_on_pub"].remove(name)
+            elif name not in data["not_on_pub"]:
+                data["not_on_pub"].append(name)
+        except Exception:  # noqa: BLE001  (404: not a package)
+            if name not in data["not_on_pub"]:
+                data["not_on_pub"].append(name)
+
+    for p in package_ids(data):
         try:
             info = _get(f"https://pub.dev/api/packages/{p}")
             score = _get(f"https://pub.dev/api/packages/{p}/score")
             data["pub"][p] = {
                 "version": info["latest"]["version"],
+                "published": info["latest"].get("published", ""),
+                "description": info["latest"]["pubspec"].get("description", "").strip(),
                 "likes": score.get("likeCount") or 0,
                 "points": score.get("grantedPoints") or 0,
                 "max_points": score.get("maxPoints") or 160,
                 "dl30": score.get("downloadCount30Days") or 0,
+                "discovered": data["pub"].get(p, {}).get("discovered", False),
             }
         except Exception as e:  # noqa: BLE001
             print(f"! pub.dev failed for {p}, using cache: {e}", file=sys.stderr)
 
+    data["not_on_pub"].sort()
     CACHE_FILE.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n", "utf-8")
     return data
+
+
+def package_ids(data: dict) -> list[str]:
+    ids = [p["id"] for p in CFG["packages"]] + [p["id"] for p in CFG["more_packages"]]
+    ids += sorted(k for k, v in data["pub"].items() if v.get("discovered") and k not in ids)
+    return ids
+
+
+def _when(iso: str) -> dt.datetime | None:
+    try:
+        w = dt.datetime.fromisoformat(iso.replace("Z", "+00:00"))
+        return w if w.tzinfo else w.replace(tzinfo=dt.timezone.utc)
+    except (ValueError, AttributeError):
+        return None
+
+
+def _pushed_recently(r: dict, days: int) -> bool:
+    w = _when(r.get("pushed_at", ""))
+    return bool(w and (NOW - w).days < days)
+
+
+def ago(iso: str) -> str:
+    w = _when(iso)
+    if not w:
+        return ""
+    d = (NOW.date() - w.date()).days
+    if d <= 0:
+        return "today"
+    if d == 1:
+        return "yesterday"
+    if d < 7:
+        return f"{d} days ago"
+    if d < 30:
+        return f"{d // 7} week{'s' if d >= 14 else ''} ago"
+    if d < 365:
+        return f"{d // 30} month{'s' if d >= 60 else ''} ago"
+    return f"{d // 365} year{'s' if d >= 730 else ''} ago"
 
 
 # --------------------------------------------------------------------------- helpers
@@ -459,14 +542,71 @@ def footer(theme: str) -> str:
 '''
 
 
+
+# --------------------------------------------------------------------------- now (live)
+
+def _clip(s: str, n: int) -> str:
+    s = " ".join(s.split())
+    return s if len(s) <= n else s[: n - 1].rstrip(" ,.;:-") + "…"
+
+
+def now_card(theme: str, working: list[dict], releases: list[dict]) -> str:
+    c = THEMES[theme]
+    W, H = 1000, 300
+    cols = [(0, "WORKING ON", "live from GitHub", c["accent"]), (340, "LATEST RELEASES", "pub.dev", c["accent2"]),
+            (680, "OPEN TO", "say hi", c["ok"])]
+    out = ""
+    for x0, title, sub, col in cols:
+        out += (f'<rect x="{x0 + 0.5}" y="0.5" width="319" height="{H - 1}" rx="18" fill="{c["card"]}" stroke="{c["border"]}"/>'
+                f'<rect x="{x0 + 22}" y="24" width="18" height="3" rx="1.5" fill="{col}"/>'
+                f'<text x="{x0 + 22}" y="50" font-family="{MONO}" font-size="12" font-weight="700" letter-spacing="1.2" fill="{c["muted"]}">{x(title)}</text>'
+                f'<text x="{x0 + 298}" y="50" text-anchor="end" font-family="{MONO}" font-size="11" fill="{c["muted"]}">{x(sub)}</text>')
+
+    def row(x0: float, y: float, name: str, right: str, line2: str, dot: str, live: bool) -> str:
+        pulse = (f'<circle cx="{x0 + 27}" cy="{y - 5}" r="4.5" fill="{dot}"><animate attributeName="r" values="4.5;9;4.5" dur="2.4s" repeatCount="indefinite"/>'
+                 f'<animate attributeName="opacity" values="0.5;0;0.5" dur="2.4s" repeatCount="indefinite"/></circle>') if live else ""
+        return (f'{pulse}<circle cx="{x0 + 27}" cy="{y - 5}" r="4.5" fill="{dot}"/>'
+                f'<text x="{x0 + 40}" y="{y}" font-family="{MONO}" font-size="14" font-weight="700" fill="{c["text"]}">{x(_clip(name, 22))}</text>'
+                f'<text x="{x0 + 298}" y="{y}" text-anchor="end" font-family="{MONO}" font-size="11.5" fill="{c["muted"]}">{x(right)}</text>'
+                f'<text x="{x0 + 40}" y="{y + 20}" font-family="{SANS}" font-size="13" fill="{c["muted"]}">{x(_clip(line2, 38))}</text>')
+
+    for i, r in enumerate(working[:4]):
+        out += row(0, 92 + i * 52, r["name"], r["ago"], r["description"] or r["language"] or "",
+                   LANG_COLORS.get(r["language"] or "", c["muted"]), i == 0 and r["ago"] in ("today", "yesterday"))
+    for i, r in enumerate(releases[:4]):
+        out += row(340, 92 + i * 52, r["name"], f'v{r["version"]}', r["ago"] + "  ·  " + r["description"], c["accent2"], False)
+    for i, (head, line) in enumerate(CFG["open_to"]):
+        out += (f'<path d="M702 {87 + i * 52} l4 4 l8 -9" fill="none" stroke="{c["ok"]}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>'
+                f'<text x="722" y="{92 + i * 52}" font-family="{SANS}" font-size="15" font-weight="700" fill="{c["text"]}">{x(head)}</text>'
+                f'<text x="722" y="{112 + i * 52}" font-family="{SANS}" font-size="13" fill="{c["muted"]}">{x(line)}</text>')
+    return f'{svg_open(W, H, "Now: what I am working on and my latest releases")}{out}</svg>\n'
+
+
+# --------------------------------------------------------------------------- README auto-blocks
+
+def update_readme(blocks: dict[str, str]) -> None:
+    """Replace the text between <!-- auto:NAME --> and <!-- /auto:NAME --> markers."""
+    if not README.exists():
+        return
+    s = README.read_text("utf-8")
+    for name, body in blocks.items():
+        a, b = f"<!-- auto:{name} -->", f"<!-- /auto:{name} -->"
+        if a in s and b in s:
+            i, j = s.index(a) + len(a), s.index(b)
+            s = s[:i] + body + s[j:]
+        else:
+            print(f"! README has no auto:{name} block", file=sys.stderr)
+    README.write_text(s, "utf-8", newline="\n")
+
+
 # --------------------------------------------------------------------------- main
 
 def main() -> None:
     d = collect()
     repos = d["repos"]
     own = {k: v for k, v in repos.items() if not v["fork"]}
-    pkg_ids = [p["id"] for p in CFG["packages"]] + [p["id"] for p in CFG["more_packages"]]
-    pub = {k: v for k, v in d["pub"].items() if k in pkg_ids}
+    pkg_ids = package_ids(d)
+    pub = {k: v for k, v in d["pub"].items() if k in pkg_ids and "version" in v}
 
     langs: dict[str, int] = {}
     for v in own.values():
@@ -481,24 +621,37 @@ def main() -> None:
         "repos": len(own),
         "followers": d["user"].get("followers", 0),
         "packages": len(pkg_ids),
-        "dl30": sum(p["dl30"] for p in pub.values()),
-        "avg_points": round(sum(p["points"] for p in pub.values()) / max(len(pub), 1)),
+        "dl30": sum(p.get("dl30", 0) for p in pub.values()),
+        "avg_points": round(sum(p.get("points", 0) for p in pub.values()) / max(len(pub), 1)),
         "languages": top,
-        "date": dt.date.today().isoformat(),
+        "date": NOW.date().isoformat(),
     }
+
+    hidden = set(CFG.get("now_hide", [])) | {CFG["user"]}
+    working = [dict(name=k, ago=ago(v["pushed_at"]), description=v.get("description", ""), language=v.get("language"))
+               for k, v in sorted(own.items(), key=lambda kv: kv[1].get("pushed_at", ""), reverse=True)
+               if k not in hidden and not v.get("archived") and v.get("pushed_at")]
+    blurb_of = {p["id"]: p["blurb"] for p in CFG["packages"] + CFG["more_packages"]}
+    releases = [dict(name=k, version=v["version"], ago=ago(v.get("published", "")),
+                     description=blurb_of.get(k) or v.get("description", ""))
+                for k, v in sorted(pub.items(), key=lambda kv: kv[1].get("published", ""), reverse=True)]
 
     ASSETS.mkdir(exist_ok=True)
     out: dict[str, str] = {}
     for t in THEMES:
+        c = THEMES[t]
         out[f"hero-{t}.svg"] = hero(t, stats)
         out[f"stats-{t}.svg"] = stats_card(t, stats)
         out[f"footer-{t}.svg"] = footer(t)
+        out[f"now-{t}.svg"] = now_card(t, working, releases)
+        out[f"foresight-{t}.svg"] = foresight.foresight_svg(dict(c, MONO=MONO, SANS=SANS, dark=t == "dark"))
         for idx, key, title, kicker in [
-            ("01", "now", "Now", "what I'm shipping"),
-            ("02", "packages", "Open-source packages", f"{stats['packages']} on pub.dev"),
-            ("03", "projects", "Selected projects", "apps · agents · local AI"),
-            ("04", "stack", "Toolkit", "what I build with"),
-            ("05", "activity", "Activity", "live from GitHub & pub.dev"),
+            ("01", "now", "Now", "updates itself from GitHub & pub.dev"),
+            ("02", "research", "Predicting the future", "motion forecasting · tracking · risk"),
+            ("03", "packages", "Open-source packages", f"{stats['packages']} on pub.dev"),
+            ("04", "projects", "Selected projects", "apps · agents · local AI"),
+            ("05", "stack", "Toolkit", "what I build with"),
+            ("06", "activity", "Activity", "live from GitHub & pub.dev"),
         ]:
             out[f"section-{key}-{t}.svg"] = section(t, idx, title, kicker)
 
@@ -519,7 +672,25 @@ def main() -> None:
 
     for name, svg in out.items():
         (ASSETS / name).write_text(svg, "utf-8", newline="\n")
-    print(f"wrote {len(out)} SVGs | {stats['stars']} stars | {stats['repos']} repos | {stats['dl30']} pub downloads/30d")
+
+    # README parts that depend on live data
+    featured = {p["id"] for p in CFG["packages"]}
+    rows = ["", "", "| Package | What it does | Live |", "| :-- | :-- | :-- |"]
+    for pid in pkg_ids:
+        if pid in featured:
+            continue
+        what = blurb_of.get(pid) or _clip(pub.get(pid, {}).get("description", ""), 90)
+        rows.append(f"| [`{pid}`](https://pub.dev/packages/{pid}) | {what} | "
+                    f"![version](https://img.shields.io/pub/v/{pid}?style=flat-square&label=&color=22d3ee&labelColor=0d1117) "
+                    f"![points](https://img.shields.io/pub/points/{pid}?style=flat-square&label=pts&color=a78bfa&labelColor=0d1117) |")
+    more = len(pkg_ids) - len(featured)
+    update_readme({
+        "pub-badge": f'<a href="#packages"><img alt="pub.dev" src="https://img.shields.io/badge/pub.dev-{stats["packages"]}_Flutter_packages-0175c2?style=flat-square&logo=dart&logoColor=white&labelColor=0d1117"></a>',
+        "more-packages-summary": f"<summary><b>+ {more} more packages</b></summary>",
+        "more-packages": "\n".join(rows) + "\n\n",
+    })
+    print(f"wrote {len(out)} SVGs | {stats['stars']} stars | {stats['repos']} repos | {stats['packages']} packages | "
+          f"{stats['dl30']} pub downloads/30d | working on: {', '.join(w['name'] for w in working[:3])}")
 
 
 if __name__ == "__main__":

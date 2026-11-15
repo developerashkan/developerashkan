@@ -6,7 +6,7 @@
 <style>.sweep{animation:sweep 7s ease-in-out infinite}@keyframes sweep{0%{transform:translateX(-160px)}60%,100%{transform:translateX(1000px)}}@media (prefers-reduced-motion: reduce){*{animation:none!important}.rm-hide{display:none}.rm-show{display:inline!important}}</style>
 <text x="0" y="42" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="15" font-weight="700" fill="#22D3EE">01</text>
 <text x="38" y="44" font-family="'Inter','Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="800" letter-spacing="-0.6" fill="#E6EDF3">Now</text>
-<text x="1000" y="43" text-anchor="end" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="14" fill="#8B949E">what I&#x27;m shipping</text>
+<text x="1000" y="43" text-anchor="end" font-family="'JetBrains Mono','SF Mono','Cascadia Code',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="14" fill="#8B949E">updates itself from GitHub &amp; pub.dev</text>
 <rect x="0" y="62" width="1000" height="2" rx="1" fill="url(#l)"/>
 <rect class="sweep" x="0" y="62" width="160" height="2" fill="url(#s)"/>
 </svg>

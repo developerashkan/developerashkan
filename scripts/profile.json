@@ -13,9 +13,9 @@
   ],
   "typing": [
     "running LLMs offline in pure Dart",
-    "tracking BLE devices with Kalman filters",
-    "painting GPU shaders in Flutter",
-    "orchestrating autonomous AI agents"
+    "forecasting where players move next",
+    "tracking cars and predicting collisions",
+    "painting GPU shaders in Flutter"
   ],
   "years": "8+",
   "email": "ashkanbhmn@gmail.com",
@@ -36,70 +36,70 @@
       "id": "device_finder",
       "icon": "radar",
       "accent": "emerald",
-      "blurb": "Fully offline Bluetooth tracking: Kalman-filtered RSSI, trilateration and a smooth radar UI.",
+      "blurb": "Offline Bluetooth finder: Kalman-filtered RSSI, trilateration and a holographic 3D radar.",
       "tags": [
         "BLE",
         "Kalman",
-        "Pure Dart"
+        "3D radar"
       ]
     },
     {
       "id": "rehoboam_neural_ui",
       "icon": "eye",
       "accent": "rose",
-      "blurb": "A Rehoboam-style neural HUD with organic particle fields and a 3D Earth globe with geo mapping.",
+      "blurb": "AI-native UI: liquid-glass orb, voice and chat widgets, plus an agent for Claude, Gemini and more.",
       "tags": [
-        "HUD",
-        "3D",
-        "Particles"
+        "AI",
+        "Agents",
+        "Glass"
       ]
     },
     {
       "id": "ollama_easy",
       "icon": "cpu",
       "accent": "cyan",
-      "blurb": "One-line ask(), streaming, typed chat, askJson() and embeddings for local Ollama models.",
+      "blurb": "Complete Ollama client: streaming chat, tool-calling loops, structured outputs, vision, embeddings.",
       "tags": [
         "LLM",
-        "Streaming",
-        "Local AI"
+        "Tools",
+        "Web"
       ]
     },
     {
       "id": "app_bar_search",
       "icon": "search",
       "accent": "blue",
-      "blurb": "Drop-in AppBar with integrated search and smooth, zero-lag animations.",
+      "blurb": "Search app bar in six modern designs (pill, glass, gradient, ⌘K spotlight) with ten animations.",
       "tags": [
         "Widget",
         "Search",
-        "UX"
+        "RTL"
       ]
     },
     {
       "id": "car_license_plate",
       "icon": "plate",
       "accent": "amber",
-      "blurb": "Iranian vehicle license plates as precise, region-aware vector widgets.",
+      "blurb": "Realistic licence plates and validators for 20 countries: EU, UK, US, Japan, India, Iran…",
       "tags": [
         "Widget",
-        "Canvas",
-        "Vector"
+        "20 countries",
+        "Validator"
       ]
     }
   ],
   "more_packages": [
     {
       "id": "smart_refresh_token",
-      "blurb": "Automatic Dio token refresh with request queueing"
+      "blurb": "Race-free Dio token refresh: single-flight, request replay, proactive JWT refresh"
     },
     {
       "id": "performance_list_view",
-      "blurb": "Pagination, pull-to-refresh, error states, image memory optimisation"
+      "blurb": "Fast lists, grids and masonry with pagination that never gets stuck, plus an AI chat view"
     },
     {
       "id": "azure_speech_recognition_services",
-      "blurb": "Azure speech-to-text for Flutter"
+      "blurb": "Azure speech-to-text: streaming results, auto language detect, diarization"
     },
     {
       "id": "smart_progress_circle",
@@ -238,5 +238,25 @@
       "blurb": "Turns plain-text task lists into Gantt charts in the terminal",
       "stack": "Python"
     }
-  ]
+  ],
+  "open_to": [
+    [
+      "Mobile & AI engineering roles",
+      "Flutter, Kotlin, Swift, on-device ML"
+    ],
+    [
+      "Freelance projects",
+      "apps, agents, local-AI products"
+    ],
+    [
+      "Open-source collaboration",
+      "issues and PRs are always welcome"
+    ],
+    [
+      "Talks & mentoring",
+      "Flutter, AI on the edge"
+    ]
+  ],
+  "now_hide": [],
+  "not_packages": []
 }
