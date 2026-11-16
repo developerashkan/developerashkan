@@ -13,7 +13,7 @@
     "app_bar_search": {
       "description": "A beautiful Flutter app bar with built-in search: six modern designs (pill, glass, gradient, floating, spotlight), ten animations, keyboard shortcuts, RTL, responsive and accessible.",
       "discovered": false,
-      "dl30": 231,
+      "dl30": 241,
       "likes": 4,
       "max_points": 160,
       "points": 150,
@@ -23,7 +23,7 @@
     "azure_speech_recognition_services": {
       "description": "Azure AI Speech speech-to-text for Flutter: streaming partial and final results, continuous recognition, language auto-detect, phrase lists, word timestamps, diarization, pronunciation assessment and token auth. Android, iOS and web.",
       "discovered": false,
-      "dl30": 175,
+      "dl30": 185,
       "likes": 1,
       "max_points": 160,
       "points": 140,
@@ -33,7 +33,7 @@
     "car_license_plate": {
       "description": "Realistic, scalable licence plate widgets and validators for 20 countries: Iran, EU, UK, USA, Japan, China, India, Brazil and more.",
       "discovered": false,
-      "dl30": 202,
+      "dl30": 213,
       "likes": 7,
       "max_points": 160,
       "points": 160,
@@ -43,7 +43,7 @@
     "device_finder": {
       "description": "Offline Bluetooth device finding for Flutter: a pure-Dart Kalman-filtered RSSI engine with per-observer trilateration, plus a holographic, orbitable 3D radar widget. Pair with device_finder_ble for capture.",
       "discovered": false,
-      "dl30": 200,
+      "dl30": 206,
       "likes": 1,
       "max_points": 160,
       "points": 150,
@@ -53,8 +53,8 @@
     "generative_shader_ui": {
       "description": "GPU shader widgets: auto skeleton loader, liquid glass, particles, Siri orb and waves, neon buttons, ripples, reveal transitions. No GLSL needed.",
       "discovered": false,
-      "dl30": 200,
-      "likes": 1,
+      "dl30": 209,
+      "likes": 2,
       "max_points": 160,
       "points": 160,
       "published": "2026-11-09T15:32:03.901979Z",
@@ -63,7 +63,7 @@
     "ollama_easy": {
       "description": "Complete Ollama client for Dart and Flutter: streaming chat, tool-calling loops, structured outputs, thinking, vision, embeddings, model management, cancel tokens, retries.",
       "discovered": false,
-      "dl30": 95,
+      "dl30": 103,
       "likes": 1,
       "max_points": 160,
       "points": 160,
@@ -73,7 +73,7 @@
     "performance_list_view": {
       "description": "Fast Flutter list, grid and masonry with pagination that never gets stuck, pull-to-refresh, sticky headers, skeletons, scroll-to-index and an AI chat streaming view.",
       "discovered": false,
-      "dl30": 97,
+      "dl30": 105,
       "likes": 2,
       "max_points": 160,
       "points": 160,
@@ -83,7 +83,7 @@
     "rehoboam_neural_ui": {
       "description": "AI-native Flutter UI. Liquid-glass orb, voice and chat widgets, the Rehoboam HUD and 3D globe, plus an agent for Claude, Gemini, OpenAI, Genkit and any LLM.",
       "discovered": false,
-      "dl30": 119,
+      "dl30": 127,
       "likes": 2,
       "max_points": 160,
       "points": 160,
@@ -103,7 +103,7 @@
     "smart_refresh_token": {
       "description": "Race-free automatic access/refresh token handling for Dio. Single-flight refresh, request replay, proactive JWT expiry refresh, logout-safe, and pluggable secure storage on every platform.",
       "discovered": false,
-      "dl30": 102,
+      "dl30": 111,
       "likes": 2,
       "max_points": 160,
       "points": 150,
@@ -349,7 +349,7 @@
       "fork": false,
       "forks": 0,
       "language": "Python",
-      "pushed_at": "2026-11-15T17:57:37Z",
+      "pushed_at": "2026-11-15T22:55:17Z",
       "stars": 1
     },
     "device_finder": {
