@@ -33,20 +33,20 @@
     "car_license_plate": {
       "description": "Realistic, scalable licence plate widgets and validators for 20 countries: Iran, EU, UK, USA, Japan, China, India, Brazil and more.",
       "discovered": false,
-      "dl30": 221,
+      "dl30": 229,
       "likes": 7,
       "max_points": 160,
-      "points": 160,
+      "points": 150,
       "published": "2026-11-10T19:54:58.051981Z",
       "version": "2.0.1"
     },
     "device_finder": {
       "description": "Offline Bluetooth device finding for Flutter: a pure-Dart Kalman-filtered RSSI engine with per-observer trilateration, plus a holographic, orbitable 3D radar widget. Pair with device_finder_ble for capture.",
       "discovered": false,
-      "dl30": 210,
+      "dl30": 216,
       "likes": 1,
       "max_points": 160,
-      "points": 150,
+      "points": 140,
       "published": "2026-11-09T21:29:29.391219Z",
       "version": "0.2.0"
     },
@@ -349,7 +349,7 @@
       "fork": false,
       "forks": 0,
       "language": "Python",
-      "pushed_at": "2026-11-17T03:57:47Z",
+      "pushed_at": "2026-11-17T16:09:44Z",
       "stars": 1
     },
     "device_finder": {
