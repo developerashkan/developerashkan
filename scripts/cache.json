@@ -73,10 +73,10 @@
     "performance_list_view": {
       "description": "Fast Flutter list, grid and masonry with pagination that never gets stuck, pull-to-refresh, sticky headers, skeletons, scroll-to-index and an AI chat streaming view.",
       "discovered": false,
-      "dl30": 113,
-      "likes": 2,
+      "dl30": 114,
+      "likes": 3,
       "max_points": 160,
-      "points": 160,
+      "points": 150,
       "published": "2026-11-10T22:12:08.048913Z",
       "version": "1.0.0"
     },
@@ -349,7 +349,7 @@
       "fork": false,
       "forks": 0,
       "language": "Python",
-      "pushed_at": "2026-11-18T00:59:55Z",
+      "pushed_at": "2026-11-18T11:52:36Z",
       "stars": 1
     },
     "device_finder": {
