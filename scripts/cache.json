@@ -16,14 +16,14 @@
       "dl30": 258,
       "likes": 4,
       "max_points": 160,
-      "points": 150,
+      "points": 140,
       "published": "2026-11-10T19:15:40.427454Z",
       "version": "2.0.1"
     },
     "azure_speech_recognition_services": {
       "description": "Azure AI Speech speech-to-text for Flutter: streaming partial and final results, continuous recognition, language auto-detect, phrase lists, word timestamps, diarization, pronunciation assessment and token auth. Android, iOS and web.",
       "discovered": false,
-      "dl30": 210,
+      "dl30": 206,
       "likes": 1,
       "max_points": 160,
       "points": 140,
@@ -33,20 +33,20 @@
     "car_license_plate": {
       "description": "Realistic, scalable licence plate widgets and validators for 20 countries: Iran, EU, UK, USA, Japan, China, India, Brazil and more.",
       "discovered": false,
-      "dl30": 230,
+      "dl30": 229,
       "likes": 7,
       "max_points": 160,
-      "points": 160,
+      "points": 150,
       "published": "2026-11-10T19:54:58.051981Z",
       "version": "2.0.1"
     },
     "device_finder": {
       "description": "Offline Bluetooth device finding for Flutter: a pure-Dart Kalman-filtered RSSI engine with per-observer trilateration, plus a holographic, orbitable 3D radar widget. Pair with device_finder_ble for capture.",
       "discovered": false,
-      "dl30": 215,
+      "dl30": 213,
       "likes": 1,
       "max_points": 160,
-      "points": 150,
+      "points": 140,
       "published": "2026-11-09T21:29:29.391219Z",
       "version": "0.2.0"
     },
@@ -56,7 +56,7 @@
       "dl30": 213,
       "likes": 2,
       "max_points": 160,
-      "points": 160,
+      "points": 150,
       "published": "2026-11-09T15:32:03.901979Z",
       "version": "1.1.0"
     },
@@ -86,7 +86,7 @@
       "dl30": 150,
       "likes": 2,
       "max_points": 160,
-      "points": 160,
+      "points": 150,
       "published": "2026-11-10T22:01:50.774493Z",
       "version": "1.1.0"
     },
@@ -96,7 +96,7 @@
       "dl30": 32,
       "likes": 3,
       "max_points": 160,
-      "points": 130,
+      "points": 120,
       "published": "2026-07-01T19:06:09.915899Z",
       "version": "0.1.0"
     },
@@ -349,7 +349,7 @@
       "fork": false,
       "forks": 0,
       "language": "Python",
-      "pushed_at": "2026-11-19T02:38:04Z",
+      "pushed_at": "2026-11-19T11:49:46Z",
       "stars": 1
     },
     "device_finder": {
