@@ -83,7 +83,7 @@
     "rehoboam_neural_ui": {
       "description": "AI-native Flutter UI. Liquid-glass orb, voice and chat widgets, the Rehoboam HUD and 3D globe, plus an agent for Claude, Gemini, OpenAI, Genkit and any LLM.",
       "discovered": false,
-      "dl30": 150,
+      "dl30": 151,
       "likes": 2,
       "max_points": 160,
       "points": 150,
@@ -349,7 +349,7 @@
       "fork": false,
       "forks": 0,
       "language": "Python",
-      "pushed_at": "2026-11-19T20:44:13Z",
+      "pushed_at": "2026-11-20T02:23:05Z",
       "stars": 1
     },
     "device_finder": {
