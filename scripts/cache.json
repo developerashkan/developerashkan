@@ -13,7 +13,7 @@
     "app_bar_search": {
       "description": "A beautiful Flutter app bar with built-in search: six modern designs (pill, glass, gradient, floating, spotlight), ten animations, keyboard shortcuts, RTL, responsive and accessible.",
       "discovered": false,
-      "dl30": 258,
+      "dl30": 254,
       "likes": 4,
       "max_points": 160,
       "points": 140,
@@ -349,7 +349,7 @@
       "fork": false,
       "forks": 0,
       "language": "Python",
-      "pushed_at": "2026-11-19T11:49:46Z",
+      "pushed_at": "2026-11-19T20:44:13Z",
       "stars": 1
     },
     "device_finder": {
