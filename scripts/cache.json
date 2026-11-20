@@ -63,7 +63,7 @@
     "ollama_easy": {
       "description": "Complete Ollama client for Dart and Flutter: streaming chat, tool-calling loops, structured outputs, thinking, vision, embeddings, model management, cancel tokens, retries.",
       "discovered": false,
-      "dl30": 111,
+      "dl30": 109,
       "likes": 1,
       "max_points": 160,
       "points": 160,
@@ -83,7 +83,7 @@
     "rehoboam_neural_ui": {
       "description": "AI-native Flutter UI. Liquid-glass orb, voice and chat widgets, the Rehoboam HUD and 3D globe, plus an agent for Claude, Gemini, OpenAI, Genkit and any LLM.",
       "discovered": false,
-      "dl30": 151,
+      "dl30": 150,
       "likes": 2,
       "max_points": 160,
       "points": 150,
@@ -103,7 +103,7 @@
     "smart_refresh_token": {
       "description": "Race-free automatic access/refresh token handling for Dio. Single-flight refresh, request replay, proactive JWT expiry refresh, logout-safe, and pluggable secure storage on every platform.",
       "discovered": false,
-      "dl30": 116,
+      "dl30": 117,
       "likes": 2,
       "max_points": 160,
       "points": 150,
@@ -349,7 +349,7 @@
       "fork": false,
       "forks": 0,
       "language": "Python",
-      "pushed_at": "2026-11-20T02:23:05Z",
+      "pushed_at": "2026-11-20T11:50:47Z",
       "stars": 1
     },
     "device_finder": {
