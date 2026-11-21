@@ -13,7 +13,7 @@
     "app_bar_search": {
       "description": "A beautiful Flutter app bar with built-in search: six modern designs (pill, glass, gradient, floating, spotlight), ten animations, keyboard shortcuts, RTL, responsive and accessible.",
       "discovered": false,
-      "dl30": 254,
+      "dl30": 248,
       "likes": 4,
       "max_points": 160,
       "points": 140,
@@ -23,7 +23,7 @@
     "azure_speech_recognition_services": {
       "description": "Azure AI Speech speech-to-text for Flutter: streaming partial and final results, continuous recognition, language auto-detect, phrase lists, word timestamps, diarization, pronunciation assessment and token auth. Android, iOS and web.",
       "discovered": false,
-      "dl30": 206,
+      "dl30": 202,
       "likes": 1,
       "max_points": 160,
       "points": 140,
@@ -33,7 +33,7 @@
     "car_license_plate": {
       "description": "Realistic, scalable licence plate widgets and validators for 20 countries: Iran, EU, UK, USA, Japan, China, India, Brazil and more.",
       "discovered": false,
-      "dl30": 229,
+      "dl30": 227,
       "likes": 7,
       "max_points": 160,
       "points": 150,
@@ -43,7 +43,7 @@
     "device_finder": {
       "description": "Offline Bluetooth device finding for Flutter: a pure-Dart Kalman-filtered RSSI engine with per-observer trilateration, plus a holographic, orbitable 3D radar widget. Pair with device_finder_ble for capture.",
       "discovered": false,
-      "dl30": 213,
+      "dl30": 210,
       "likes": 1,
       "max_points": 160,
       "points": 140,
@@ -349,7 +349,7 @@
       "fork": false,
       "forks": 0,
       "language": "Python",
-      "pushed_at": "2026-11-20T20:28:37Z",
+      "pushed_at": "2026-11-21T02:25:18Z",
       "stars": 1
     },
     "device_finder": {
