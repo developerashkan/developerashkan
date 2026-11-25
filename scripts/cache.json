@@ -13,7 +13,7 @@
     "app_bar_search": {
       "description": "A beautiful Flutter app bar with built-in search: six modern designs (pill, glass, gradient, floating, spotlight), ten animations, keyboard shortcuts, RTL, responsive and accessible.",
       "discovered": false,
-      "dl30": 250,
+      "dl30": 274,
       "likes": 4,
       "max_points": 160,
       "points": 140,
@@ -23,7 +23,7 @@
     "azure_speech_recognition_services": {
       "description": "Azure AI Speech speech-to-text for Flutter: streaming partial and final results, continuous recognition, language auto-detect, phrase lists, word timestamps, diarization, pronunciation assessment and token auth. Android, iOS and web.",
       "discovered": false,
-      "dl30": 210,
+      "dl30": 219,
       "likes": 1,
       "max_points": 160,
       "points": 140,
@@ -349,7 +349,7 @@
       "fork": false,
       "forks": 0,
       "language": "Python",
-      "pushed_at": "2026-11-24T23:56:01Z",
+      "pushed_at": "2026-11-25T08:44:53Z",
       "stars": 1
     },
     "device_finder": {
