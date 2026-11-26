@@ -33,7 +33,7 @@
     "car_license_plate": {
       "description": "Realistic, scalable licence plate widgets and validators for 20 countries: Iran, EU, UK, USA, Japan, China, India, Brazil and more.",
       "discovered": false,
-      "dl30": 227,
+      "dl30": 241,
       "likes": 7,
       "max_points": 160,
       "points": 150,
@@ -43,7 +43,7 @@
     "device_finder": {
       "description": "Offline Bluetooth device finding for Flutter: a pure-Dart Kalman-filtered RSSI engine with per-observer trilateration, plus a holographic, orbitable 3D radar widget. Pair with device_finder_ble for capture.",
       "discovered": false,
-      "dl30": 223,
+      "dl30": 227,
       "likes": 1,
       "max_points": 160,
       "points": 140,
@@ -53,7 +53,7 @@
     "generative_shader_ui": {
       "description": "GPU shader widgets: auto skeleton loader, liquid glass, particles, Siri orb and waves, neon buttons, ripples, reveal transitions. No GLSL needed.",
       "discovered": false,
-      "dl30": 230,
+      "dl30": 236,
       "likes": 2,
       "max_points": 160,
       "points": 150,
@@ -63,7 +63,7 @@
     "ollama_easy": {
       "description": "Complete Ollama client for Dart and Flutter: streaming chat, tool-calling loops, structured outputs, thinking, vision, embeddings, model management, cancel tokens, retries.",
       "discovered": false,
-      "dl30": 114,
+      "dl30": 116,
       "likes": 1,
       "max_points": 160,
       "points": 160,
@@ -73,7 +73,7 @@
     "performance_list_view": {
       "description": "Fast Flutter list, grid and masonry with pagination that never gets stuck, pull-to-refresh, sticky headers, skeletons, scroll-to-index and an AI chat streaming view.",
       "discovered": false,
-      "dl30": 126,
+      "dl30": 132,
       "likes": 3,
       "max_points": 160,
       "points": 150,
@@ -83,7 +83,7 @@
     "rehoboam_neural_ui": {
       "description": "AI-native Flutter UI. Liquid-glass orb, voice and chat widgets, the Rehoboam HUD and 3D globe, plus an agent for Claude, Gemini, OpenAI, Genkit and any LLM.",
       "discovered": false,
-      "dl30": 166,
+      "dl30": 175,
       "likes": 2,
       "max_points": 160,
       "points": 150,
@@ -93,7 +93,7 @@
     "smart_progress_circle": {
       "description": "SmartProgressCircle is a customizable Flutter widget for displaying dynamic circular progress. Ideal for real-time updates in apps like fitness trackers and dashboards.",
       "discovered": false,
-      "dl30": 27,
+      "dl30": 35,
       "likes": 3,
       "max_points": 160,
       "points": 120,
@@ -103,7 +103,7 @@
     "smart_refresh_token": {
       "description": "Race-free automatic access/refresh token handling for Dio. Single-flight refresh, request replay, proactive JWT expiry refresh, logout-safe, and pluggable secure storage on every platform.",
       "discovered": false,
-      "dl30": 118,
+      "dl30": 125,
       "likes": 2,
       "max_points": 160,
       "points": 150,
@@ -349,7 +349,7 @@
       "fork": false,
       "forks": 0,
       "language": "Python",
-      "pushed_at": "2026-11-25T08:44:53Z",
+      "pushed_at": "2026-11-25T19:23:12Z",
       "stars": 1
     },
     "device_finder": {
